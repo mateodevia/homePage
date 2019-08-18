@@ -1,0 +1,55 @@
+.linea {
+  background-color: #e74c3c;
+  height: 5px;
+  width: 100%;
+}
+
+.infoContacto {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#facebook {
+  filter: invert(82%) sepia(1%) saturate(0%) hue-rotate(338deg) brightness(85%) contrast(84%);}
+
+#facebook:hover {
+  filter: invert(32%) sepia(53%) saturate(649%) hue-rotate(183deg) brightness(92%) contrast(89%);
+
+}
+
+#instagram {
+  filter: invert(82%) sepia(1%) saturate(0%) hue-rotate(338deg) brightness(85%) contrast(84%);}
+
+#instagram:hover {
+  filter: invert(31%) sepia(20%) saturate(5380%) hue-rotate(257deg) brightness(85%) contrast(93%);
+}
+
+#twitter {
+  height: 49px;
+  filter: invert(82%) sepia(1%) saturate(0%) hue-rotate(338deg) brightness(85%) contrast(84%);}
+
+#twitter:hover {
+  filter: invert(56%) sepia(22%) saturate(7484%) hue-rotate(177deg) brightness(100%) contrast(90%);
+}
+
+#github {
+  height: 49px;
+  filter: invert(82%) sepia(1%) saturate(0%) hue-rotate(338deg) brightness(85%) contrast(84%);}
+
+#github:hover {
+  filter: invert(0%) sepia(2%) saturate(2%) hue-rotate(43deg) brightness(99%) contrast(100%);
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 0;
+
+}
+
+.itemLista {
+  list-style-type: none;
+  margin-right: 1%;
+  margin-left: 1%;
+}
