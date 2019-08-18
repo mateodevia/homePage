@@ -1,0 +1,60 @@
+.sombreado{
+  opacity: .9;
+  background-color: grey;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.foto {
+  position: absolute;
+  z-index: -1;
+  height: 400px;
+  width: 100vw;
+  background-image: url('media/home.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#quote {
+  color: white;
+  font-size: 5rem;
+}
+
+.interes {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.tituloInteres {
+  margin-bottom: 60px;
+}
+
+.elementosBarras {
+  margin: 1.5vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.barras {
+  margin-bottom: 60px;
+}
+
+.herramienta {
+  max-height: 75px;
+  max-width: 100%;
+}
+
+.imagenHerramienta {
+  text-align: center
+}
+
+.tituloHome {
+  text-align: center;
+  margin: 25px;
+  margin-bottom: 30px;
+}
