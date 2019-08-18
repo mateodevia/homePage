@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="styles/formacion.css" />
+  <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
+  <script src="index.js"></script>
+  <title>Mateo Devia</title>
+</head>
+
+<body onload="formacionClicked()">
+
+  <!-- Navbar -->
+  <div id="barraSticky">
+    <div id="rectangulo">
+      <!-- El boton para celulares -->
+      <button id="boton" onClick="handleClick()">☰</button>
+      <a href="/index.html">
+        <img class='logo' src="media/miFoto.jpeg"></img>
+      </a>
+      <a href="/index.html">
+        <h2 id="miNombre">Mateo Devia</h2>
+      </a>
+
+      <!-- Nav para computadores -->
+      <nav id='navHorizontal'>
+        <ul class='titulosHorizontal'>
+          <li class="titulo">
+            <a id="formacion1" href="homePage/formacion.html">Formacion</a>
+          </li>
+          <li class="titulo">
+            <a id="proyectos1" href="homePage/proyectos.html">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Nav para celulares -->
+      <nav id="navVertical">
+        <ul class='titulosVertical'>
+          <li id="formacion2" class="titulo">
+            <a href="/formacion.html">Formacion</a>
+          </li>
+          <li id="proyectos2" class="titulo">
+            <a href="/proyectos.html">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- Formacion Academica -->
+  <div>
+    <img class="panel" src="media/formacion.jpg" alt="Imagen hacerca de formacion academica">
+  </div>
+  <div class="container-fluid primera">
+    <h1>Bachillerato</h1>
+    <div class="row">
+      <img class="col-12 col-sm-4 col-md-4 col-lg-4 imagen" src=" media/rochester.jpg" alt="Logo del Colegio Rochester">
+      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centradoVertical">
+        <div>
+          <h2 class="texto">Colegio Rochester 2002-2016</h2>
+          <br>
+          <p class="texto">Curse toda mi primaria y mi bachillerato en el Colegio Rochester. Este colegio se destaca
+            por
+            formar estudiantes con altas capacidades de relacionamiento, salud mental, y conciencia ambiental.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1 class="derecha">Pregrado</h1>
+    <div class="row">
+      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centradoVertical derecha grande">
+        <div>
+          <h2 class="texto">Universidad de los Andes 2016-2020</h2>
+          <h5 class="texto">Ingenieía de Sistemas y Computación</h5>
+          <br>
+          <p class="texto">Actualmente me encuentro estudiando en la Universidad de los Andes. La universidad se
+            destaca
+            por su alto nivel academico.
+          </p>
+        </div>
+      </div>
+      <img class="col-12 col-sm-3 col-md-3 col-lg-3 imagen" src=" media/andes.png"
+        alt="Logo de la Universidad de los Andes">
+      <div class="col-12 col-sm-9 col-md-9 col-lg-9 centradoVertical derecha chiquito">
+        <div>
+          <h2 class="texto">Universidad de los Andes 2016-2020</h2>
+          <h5 class="texto">Ingenieía de Sistemas y Computación</h5>
+          <br>
+          <p class="texto">Actualmente me encuentro estudiando en la Universidad de los Andes. La universidad se
+            destaca
+            por su alto nivel academico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Contacto -->
+  <div>
+    <div class="linea"></div>
+    <h1 class="tituloHome">Contacto</h1>
+    <div>
+      <ul class="lista">
+        <li class="itemLista">
+          <a href="https://www.facebook.com/mateo.devia">
+            <img id="facebook" src="media/facebook.svg" alt="">
+          </a>
+        </li>
+        <li class="itemLista">
+          <a href="https://www.instagram.com/mateodevia/">
+            <img id="instagram" src="media/instagram.svg" alt="">
+          </a>
+        </li>
+        <li class="itemLista">
+          <a href="https://twitter.com/MateoDevia5">
+            <img id="twitter" src="media/twitter.svg" alt="">
+          </a>
+        </li>
+        <li class="itemLista">
+          <a href="https://github.com/mateodevia">
+            <img id="github" src="media/git.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="linea"></div>
+    <div class="fondoGris">
+      <div class="row justify-content-center">
+        <h4 class="col-12 col-sm-4 infoContacto">m.devia@uniandes.edu.co</h4>
+        <h4 class="col-12 col-sm-4 infoContacto">cel: 313 280 3320</h4>
+        <h4 class="col-12 col-sm-4 infoContacto">Bogota, Colombia</h4>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
