@@ -1,0 +1,36 @@
+.imagen {
+  z-index: -1;
+  height: 100%;
+}
+
+.primera {
+  margin-top: 70px;
+  z-index: -1;
+}
+.centradoVertical {
+  display: flex;
+  align-items: center;
+}
+
+.texto {
+  margin: 5px;
+}
+
+.chiquito {
+  display: none;
+}
+
+.derecha {
+  text-align: right;
+}
+
+@media only screen and (max-width: 576px) {
+
+  .grande {
+    display: none;
+  }
+
+  .chiquito {
+    display: inherit;;
+  }
+}

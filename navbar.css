@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+}
+
+#boton {
+  display: none;
+}
+
+.logo{
+  border-radius: 50%;
+  border: 5px solid #e74c3c;
+  height: 100px;
+  float: left;
+  z-index: 1;
+  position: absolute;
+  box-sizing: content-box;
+}
+
+#miNombre {
+  float: left;
+  margin-top: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 150px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+#rectangulo {
+  position: relative;
+  height: 60px;
+  background-color: #e74c3c;
+}
+
+#navHorizontal{
+  float: right;
+  background-color: #e74c3c;
+  height: 100%;
+}
+
+#navVertical{
+  display: none;
+}
+
+#barraSticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  opacity: 0.95;
+  z-index: 1;
+}
+
+.titulosHorizontal{
+  display: flex;
+  justify-content: left;
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  height: 100%;
+}
+
+.titulosVertical{
+  display: none;
+}
+
+.titulo{
+  list-style-type: none;
+  font-size: 100%;
+  padding-top: 25px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  color: white;
+}
+.titulo:hover{
+  background-color: lightgray;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: inherit;
+  padding-bottom: 9px;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  color: inherit;
+  padding-bottom: 9px;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+  #rectangulo {
+    text-align: center;
+  }
+
+  #navHorizontal{
+    display: none;
+  }
+
+  #miNombre {
+    padding-top: 20px;
+    height: 50px;
+    margin: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #boton {
+      display: block;
+      padding: 2vw;
+      font-size: 35px;
+      background-color:#e74c3c;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      position: absolute;
+      height: 60px;
+      padding-top: 0;
+      padding-bottom: 0;
+      color: white;
+  }
+
+  .logo{
+      display: none;
+  }
+
+  .titulosHorizontal{
+      display: none;
+  }
+
+  .titulosVertical{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 0px;
+      margin: 0;
+      flex-direction: column;
+      font-size: 50%;
+      background-color: #e74c3c;
+  }
+
+  .titulo{
+      list-style-type: none;
+      font-size: 3vh;
+      padding-top: 2vw;
+      padding-bottom: 2vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      border: 0;
+      z-index: 1;
+  }
+
+}
