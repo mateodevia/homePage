@@ -1,0 +1,109 @@
+.imagen {
+  z-index: -1;
+  width: 200px;
+}
+
+.centrado {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.cont{
+  text-align: center;
+  height: 300px;
+  line-height: 300px;
+}
+
+.texto {
+  margin: 5px;
+}
+
+.chiquito {
+  display: none;
+}
+
+.derecha {
+  text-align: right;
+}
+
+.gris {
+  background-color: rgba(128, 128, 128, 0.07);
+}
+
+.link {
+  color: red;
+}
+
+.botonRojo {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: block;
+  z-index: 1;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 5px;
+  border: 1px solid #888;
+  width: 450px;
+  height: 370px;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+iframe {
+  width: 95%;
+}
+
+@media only screen and (max-width: 576px) {
+
+  .modal-content {
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+
+  .grande {
+    display: none;
+  }
+
+  .chiquito {
+    display: inherit;;
+  }
+
+  .botonRojo {
+    margin: 30px;
+  }
+}

@@ -32,3 +32,26 @@ function proyectosClicked() {
   document.getElementById("proyectos1").style.borderBottom = "4px solid";
   document.getElementById("proyectos2").style.borderLeft = "8px solid";
 }
+
+function videoArquisoft() {
+  document.getElementById("modalArquisoft").style.display = "block";
+}
+
+function cerrarArquisoft() {
+  document.getElementById("modalArquisoft").style.display = "none";
+}
+
+function videoRegesta() {
+  document.getElementById("modalRegesta").style.display = "block";
+}
+
+function cerrarRegesta() {
+  document.getElementById("modalRegesta").style.display = "none";
+}
+function videoDemo() {
+  document.getElementById("modalDemo").style.display = "block";
+}
+
+function cerrarDemo() {
+  document.getElementById("modalDemo").style.display = "none";
+}

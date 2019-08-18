@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" <link
-    rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="navbar.css" />
   <script src="index.js"></script>
@@ -15,18 +16,18 @@
 <body>
 
   <!-- Navbar -->
-  <div class="contenedor">
+  <div id="barraSticky">
     <div id="rectangulo">
       <!-- El boton para celulares -->
       <button id="boton" onClick="handleClick()">☰</button>
       <a href="/index.html">
-        <img class='logo' src="miFoto.jpeg" border="10"></img>
+        <img class='logo' src="miFoto.jpeg"></img>
       </a>
       <a href="/index.html">
         <h2 id="miNombre">Mateo Devia</h2>
       </a>
 
-      <!-- Navbar para computadores -->
+      <!-- Nav para computadores -->
       <nav id='navHorizontal'>
         <ul class='titulosHorizontal'>
           <li class="titulo">
@@ -37,7 +38,7 @@
           </li>
         </ul>
       </nav>
-      <!-- Navbar para celulares -->
+      <!-- Nav para celulares -->
       <nav id="navVertical">
         <ul class='titulosVertical'>
           <li id="formacion2" class="titulo">

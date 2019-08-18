@@ -3,10 +3,6 @@
   height: 100%;
 }
 
-.primera {
-  margin-top: 70px;
-  z-index: -1;
-}
 .centradoVertical {
   display: flex;
   align-items: center;

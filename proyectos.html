@@ -4,8 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="navbar.css" />
+  <link rel="stylesheet" type="text/css" href="proyectos.css" />
   <script src="index.js"></script>
   <title>Mateo Devia</title>
 </head>
@@ -13,42 +17,190 @@
 <body onload="proyectosClicked()">
 
   <!-- Navbar -->
-  <div class="sticky">
-    <div class="contenedor">
-      <div id="rectangulo">
-        <!-- El boton para celulares -->
-        <button id="boton" onClick="handleClick()">☰</button>
-        <a href="/index.html">
-          <img class='logo' src="miFoto.jpeg" border="10"></img>
-        </a>
-        <a href="/index.html">
-          <h2 id="miNombre">Mateo Devia</h2>
-        </a>
+  <div id="barraSticky">
+    <div id="rectangulo">
+      <!-- El boton para celulares -->
+      <button id="boton" onClick="handleClick()">☰</button>
+      <a href="/index.html">
+        <img class='logo' src="miFoto.jpeg"></img>
+      </a>
+      <a href="/index.html">
+        <h2 id="miNombre">Mateo Devia</h2>
+      </a>
 
-        <!-- Navbar para computadores -->
-        <nav id='navHorizontal'>
-          <ul class='titulosHorizontal'>
-            <li class="titulo">
-              <a id="formacion1" href="/formacion.html">Formacion</a>
-            </li>
-            <li class="titulo">
-              <a id="proyectos1" href="/proyectos.html">Proyectos</a>
-            </li>
-          </ul>
-        </nav>
-        <!-- Navbar para celulares -->
-        <nav id="navVertical">
-          <ul class='titulosVertical'>
-            <li id="formacion2" class="titulo">
-              <a href="/formacion.html">Formacion</a>
-            </li>
-            <li id="proyectos2" class="titulo">
-              <a href="/proyectos.html">Proyectos</a>
-            </li>
-          </ul>
-        </nav>
+      <!-- Nav para computadores -->
+      <nav id='navHorizontal'>
+        <ul class='titulosHorizontal'>
+          <li class="titulo">
+            <a id="formacion1" href="/formacion.html">Formacion</a>
+          </li>
+          <li class="titulo">
+            <a id="proyectos1" href="/proyectos.html">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Nav para celulares -->
+      <nav id="navVertical">
+        <ul class='titulosVertical'>
+          <li id="formacion2" class="titulo">
+            <a href="/formacion.html">Formacion</a>
+          </li>
+          <li id="proyectos2" class="titulo">
+            <a href="/proyectos.html">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+
+  <!-- Proyectos -->
+  <div>
+    <img class="panel" src="proyectos.jpg" alt="Imagen de ingenieria de software">
+  </div>
+  <div class="container-fluid">
+
+
+    <div class="row">
+      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+        <div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+            <img class="imagen" src="macco.jpeg" alt="Logo de MACCO Accesorios">
+          </div>
+          <h2 class="texto">MACCO Accesorios</h2>
+          <br>
+          <p class="texto">Curse toda mi primaria y mi bachillerato en el Colegio Rochester. Este colegio se destaca
+            por
+            formar estudiantes con altas capacidades de relacionamiento, salud mental, y conciencia ambiental.
+          </p>
+          <a class="link" href="http://macco-accesorios.com">macco-accesorios.com</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+        <img class="imagen" src="macco.jpeg" alt="Logo de MACCO Accesorios">
       </div>
     </div>
+
+
+    <div class="row gris">
+      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+        <div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+            <img class="imagen" src="gendigital.png" alt="Logo de Gen Digital">
+          </div>
+          <h2 class="texto">Gen Digital SAC</h2>
+          <br>
+          <p class="texto">Curse toda mi primaria y mi bachillerato en el Colegio Rochester. Este colegio se destaca
+            por
+            formar estudiantes con altas capacidades de relacionamiento, salud mental, y conciencia ambiental.
+          </p>
+          <a class="link" href="http://gen-digital.com">gen-digital.com</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+        <img class="imagen" src="gendigital.png" alt="Logo de Gen Digital">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+        <div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+            <img class="imagen" src="gendigital.png" alt="Logo de Gen Digital">
+          </div>
+          <h2 class="texto">TrackToGo</h2>
+          <br>
+          <p class="texto">Curse toda mi primaria y mi bachillerato en el Colegio Rochester. Este colegio se destaca
+            por
+            formar estudiantes con altas capacidades de relacionamiento, salud mental, y conciencia ambiental.
+          </p>
+          <a class="link" href="https://tracktogo.co">tracktogo.co</a>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+        <img class="imagen" src="tracktogo.png" alt="Logo de Gen Digital">
+      </div>
+    </div>
+
+
+    <div class="row gris">
+      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+        <div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+            <img class="imagen" src="nidoo.png" alt="Logo de NIDOO">
+          </div>
+          <h2 class="texto">NIDOO</h2>
+          <h5 class="texto">Diseño de Arquitectura</h5>
+          <br>
+          <p class="texto">Curse toda mi primaria y mi bachillerato en el Colegio Rochester. Este colegio se destaca
+            por
+            formar estudiantes con altas capacidades de relacionamiento, salud mental, y conciencia ambiental.
+          </p>
+          <button class="botonRojo" onclick="videoArquisoft()">Ver Video</button>
+          <!-- Ventana modal -->
+          <div id="modalArquisoft" class="modal">
+            <!-- El video -->
+            <div class="modal-content">
+              <p><span class="close"><a href="javascript:cerrarArquisoft()">&times;</a></span></p>
+              <div class="videoCentrado">
+                <iframe height="315" src="https://youtube.com/embed/6v07aGTbeCY">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+        <img class="imagen" src="nidoo.png" alt="Logo de NIDOO">
+      </div>
+    </div>
+
+
+    <div class="row ">
+      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+        <div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+            <img class="imagen" src="regesta.PNG" alt="Logo de Regesta Analytics">
+          </div>
+          <h2 class="texto">Regesta Analytics</h2>
+          <br>
+          <p class="texto">Curse toda mi primaria y mi bachillerato en el Colegio Rochester. Este colegio se destaca
+            por
+            formar estudiantes con altas capacidades de relacionamiento, salud mental, y conciencia ambiental.
+          </p>
+
+          <button class="botonRojo" onclick="videoRegesta()">Ver Video</button>
+          <!-- Ventana modal -->
+          <div id="modalRegesta" class="modal">
+            <!-- El video -->
+            <div class="modal-content">
+              <p><span class="close"><a href="javascript:cerrarRegesta()">&times;</a></span></p>
+              <div class="videoCentrado">
+                <iframe height="315" src="https://youtube.com/embed/Fng-fW7l48g">
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <button class="botonRojo" onclick="videoDemo()">Ver Demo</button>
+          <!-- Ventana modal -->
+          <div id="modalDemo" class="modal">
+            <!-- El video -->
+            <div class="modal-content">
+              <p><span class="close"><a href="javascript:cerrarDemo()">&times;</a></span></p>
+              <div class="videoCentrado">
+                <iframe height="315" src="https://youtube.com/embed/yrwrGwEMSkE">
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+        <img class="imagen" src="regesta.PNG" alt="Logo de Regesta Analytics">
+      </div>
+    </div>
+
+
   </div>
 
 
