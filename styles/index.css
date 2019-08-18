@@ -1,0 +1,13 @@
+body {
+  margin: 0px;
+}
+.panel{
+  width: 100vw;
+  z-index: -1;
+}
+
+.tituloHome {
+  text-align: center;
+  margin: 25px;
+  margin-bottom: 30px;
+}
