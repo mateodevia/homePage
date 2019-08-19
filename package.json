@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-1",
+  "version": "1.0.0",
+  "description": "This proyect was created to show the world who I am, and what my academic interests are. It has information about my academic path, and all my most relevant proyects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateodevia/homePage.git"
+  },
+  "author": "Mateo Devia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mateodevia/homePage/issues"
+  },
+  "homepage": "https://github.com/mateodevia/homePage#readme",
+  "devDependencies": {
+    "eslint": "^6.2.0"
+  }
+}
