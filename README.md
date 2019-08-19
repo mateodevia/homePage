@@ -1,5 +1,5 @@
 # Mateo Devia HomePage
-![](media/SSpagina.png)
+![](media/SSpagina.PNG)
 * [__Visite Site__](https://mateodevia.github.io/homePage/)
 
 ## Table of Contents
