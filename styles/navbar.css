@@ -11,7 +11,7 @@ body {
   border: 5px solid #e74c3c;
   height: 100px;
   float: left;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   left: 0;
   box-sizing: content-box;
@@ -51,11 +51,12 @@ h2 {
 
 #barraSticky {
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   width: 100%;
   background-color: white;
   opacity: 0.95;
-  z-index: 1;
+  z-index: 2;
 }
 
 .titulosHorizontal{
@@ -161,7 +162,7 @@ a:hover {
       padding-left: 2vw;
       padding-right: 2vw;
       border: 0;
-      z-index: 1;
+      z-index: 2;
   }
 
 }
