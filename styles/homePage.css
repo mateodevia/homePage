@@ -22,7 +22,7 @@
 
 #quote {
   color: white;
-  font-size: 5rem;
+  font-size: 10vw;
 }
 
 .interes {
@@ -51,4 +51,14 @@
 
 .imagenHerramienta {
   text-align: center
+}
+
+#tools {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 1500px) {
+  #quote {
+    font-size: 8vw;
+  }
 }

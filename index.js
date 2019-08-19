@@ -1,3 +1,5 @@
+"use strict";
+
 let menuEstaAbierto = false;
 
 function handleClick() {
