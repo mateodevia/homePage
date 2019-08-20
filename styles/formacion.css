@@ -4,6 +4,25 @@
   text-align: center;
   align-items: center;
 }
+/* En vez de la clase imagen te propongo una clase por imagen, ya que son bastante distintas y a la hora de aplicarles la misma regla de tamaño no se adaptan bien.
+
+.imagen-rochester {
+  z-index: -1;
+  width : 1em;
+  height: 14em;
+  text-align: center;
+  align-items: center;
+}
+
+.imagen-andes {
+  z-index: -1;
+  width : 13em;
+  height: 12em;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+*/
 
 .centradoVertical {
   display: flex;
