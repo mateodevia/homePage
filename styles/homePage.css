@@ -1,5 +1,5 @@
-#sombreado{
-  opacity: .9;
+#sombreado {
+  opacity: 0.9;
   background-color: grey;
   height: 400px;
   display: flex;
@@ -13,7 +13,7 @@
   z-index: -1;
   height: 400px;
   width: 100vw;
-  background-image: url('../media/home.jpg');
+  background-image: url("../media/home.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,11 +46,14 @@
 
 .herramienta {
   max-height: 75px;
-  max-width: 100%;
+  max-width: 120px;
 }
 
 .imagenHerramienta {
-  text-align: center
+  text-align: center;
+  vertical-align: middle;
+  height: 75px;
+  line-height: 75px;
 }
 
 #tools {

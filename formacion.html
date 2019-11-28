@@ -1,160 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Mateo Devia" />
+    <meta name="description" content="About me page" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="styles/formacion.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="media/favicon.ico" />
+    <script src="index.js"></script>
+    <title>Mateo Devia</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <meta name="author" content="Mateo Devia" />
-  <meta name="description" content="About me page" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles/index.css" />
-  <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
-  <link rel="stylesheet" type="text/css" href="styles/formacion.css" />
-  <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="icon" href="media/favicon.ico">
-  <script src="index.js"></script>
-  <title>Mateo Devia</title>
-</head>
+  <body onload="formacionClicked()">
+    <!-- Navbar -->
+    <div id="barraSticky">
+      <div id="rectangulo">
+        <!-- El boton para celulares -->
+        <button id="boton" onClick="handleClick()">☰</button>
+        <!-- El boton para celulares -->
+        <a href="./">
+          <img class="logo" src="media/miFoto.jpeg" alt="Profile Picture" />
+        </a>
+        <a href="./">
+          <div>
+            <h2 id="miNombre">Mateo Devia Vega</h2>
+            <h6 class="carrera">Systems and Computing Engineering Student</h6>
+          </div>
+        </a>
 
-<body onload="formacionClicked()">
+        <!-- Nav para computadores -->
+        <nav id="navHorizontal">
+          <ul class="titulosHorizontal">
+            <li class="titulo">
+              <a id="proyectos1" href="./proyectos.html">Projects</a>
+            </li>
+            <li class="titulo">
+              <a id="formacion1" href="./formacion.html">Education</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav para computadores -->
 
-  <!-- Navbar -->
-  <div id="barraSticky">
-    <div id="rectangulo">
-      <!-- El boton para celulares -->
-      <button id="boton" onClick="handleClick()">☰</button>
-      <!-- El boton para celulares -->
-      <a href="./index.html">
-        <img class='logo' src="media/miFoto.jpeg" alt="Profile Picture" />
-      </a>
-      <a href="./index.html">
-        <h2 id="miNombre">Mateo Devia</h2>
-      </a>
-
-      <!-- Nav para computadores -->
-      <nav id='navHorizontal'>
-        <ul class='titulosHorizontal'>
-          <li class="titulo">
-            <a id="formacion1" href="./formacion.html">Education</a>
-          </li>
-          <li class="titulo">
-            <a id="proyectos1" href="./proyectos.html">Projects</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Nav para computadores -->
-
-      <!-- Nav para celulares -->
-      <nav id="navVertical">
-        <ul class='titulosVertical'>
-          <li id="formacion2" class="titulo">
-            <a href="./formacion.html">Education</a>
-          </li>
-          <li id="proyectos2" class="titulo">
-            <a href="./proyectos.html">Projects</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Nav para celulares -->
-    </div>
-  </div>
-  <!-- Navbar -->
-
-
-  <!-- Education -->
-  <div>
-    <img class="panel" src="media/formacion.jpg" alt="Academic Image">
-  </div>
-  <div class="container-fluid">
-    <h1>High School</h1>
-    <div class="row">
-      <img class="col-12 col-sm-4 col-md-4 col-lg-4 imagen" src=" media/rochester.jpg" alt="Rochester School's Logo">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centradoVertical">
-        <div>
-          <h2 class="texto">Rochester School 2002-2016</h2>
-          <br>
-          <p class="texto">I attended to the Rochester School from kinder garden up to high school. This school stands
-            out for teaching its students to improve their interpersonal abilities, their mental health, and their
-            environmental responsabilities.
-          </p>
-        </div>
+        <!-- Nav para celulares -->
+        <nav id="navVertical">
+          <ul class="titulosVertical">
+            <li id="proyectos2" class="titulo">
+              <a href="./proyectos.html">Projects</a>
+            </li>
+            <li id="formacion2" class="titulo">
+              <a href="./formacion.html">Education</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav para celulares -->
       </div>
     </div>
-    <h1 class="derecha">Undergraduate</h1>
-    <div class="row">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centradoVertical derecha grande">
-        <div>
-          <h2 class="texto">Universidad de los Andes 2016-2020</h2>
-          <h5 class="texto">Systems Engineering and Computation</h5>
-          <br>
-          <p class="texto">I am currently attending to the program of Systems Engineering and Computing at the
-            University of los Andes. The engineering program which I am enrrolled to is focused on software development,
-            but
-            it toches upon topics like, enterprise and business architecture, computer sciences, and technological
-            infrastructure.
-          </p>
-        </div>
-      </div>
-      <img class="col-12 col-sm-4 col-md-4 col-lg-4 imagen" src=" media/andes.png" alt="Universidad de los Andes Logo">
-      <div class="col-12 col-sm-9 col-md-9 col-lg-9 centradoVertical derecha chiquito">
-        <div>
-          <h2 class="texto">Universidad de los Andes 2016-2020</h2>
-          <h5 class="texto">Systems Engineering and Computation</h5>
-          <br>
-          <p class="texto">I am currently attending to the program of Systems Engineering and Computing at the
-            University of los Andes. The engineering program which I am enrrolled to is focused on software development,
-            but
-            it toches upon topics like, enterprise and business architecture, computer sciences, and technological
-            infrastructure.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Education -->
+    <!-- Navbar -->
 
-
-  <!-- Contacto -->
-  <div>
-    <div class="linea"></div>
-    <h1 class="tituloHome">Contacto</h1>
+    <!-- Education -->
     <div>
-      <ul class="lista">
-        <li class="itemLista">
-          <a href="https://www.facebook.com/mateo.devia">
-            <img id="facebook" src="media/facebook.svg" alt="Facobook Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://www.instagram.com/mateodevia/">
-            <img id="instagram" src="media/instagram.svg" alt="Instagram Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://twitter.com/MateoDevia5">
-            <img id="twitter" src="media/twitter.svg" alt="Twitter Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://github.com/mateodevia">
-            <img id="github" src="media/git.svg" alt="GitHub Logo">
-          </a>
-        </li>
-      </ul>
+      <img class="panel" src="media/formacion.jpg" alt="Academic Image" />
     </div>
-    <div class="linea"></div>
-    <div class="fondoGris container-fluid">
-      <div class="row justify-content-center">
-        <h4 class="col-12 col-sm-4 infoContacto">m.devia@uniandes.edu.co</h4>
-        <h4 class="col-12 col-sm-4 infoContacto">cel: 313 280 3320</h4>
-        <h4 class="col-12 col-sm-4 infoContacto">Bogota, Colombia</h4>
+    <div class="container-fluid">
+      <h1>High School</h1>
+      <div class="row">
+        <img
+          class="col-12 col-sm-4 col-md-4 col-lg-4 imagen"
+          src=" media/rochester.jpg"
+          alt="Rochester School's Logo"
+        />
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 centradoVertical">
+          <div>
+            <h2 class="texto">Rochester School 2002-2016</h2>
+            <br />
+            <p class="texto">
+              I attended to the Rochester School from kinder garden up to high
+              school. This school stands out for teaching its students to
+              improve their interpersonal abilities, their mental health, and
+              their environmental responsabilities.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1 class="derecha">Undergraduate</h1>
+      <div class="row">
+        <div
+          class="col-12 col-sm-8 col-md-8 col-lg-8 centradoVertical derecha grande"
+        >
+          <div>
+            <h2 class="texto">Universidad de los Andes 2016-2020</h2>
+            <h5 class="texto">Systems Engineering and Computation</h5>
+            <br />
+            <p class="texto">
+              I am currently attending to the program of Systems Engineering and
+              Computing at the University of los Andes. The engineering program
+              which I am enrrolled to is focused on software development, but it
+              toches upon topics like, enterprise and business architecture,
+              computer sciences, and technological infrastructure.
+            </p>
+          </div>
+        </div>
+        <img
+          class="col-12 col-sm-4 col-md-4 col-lg-4 imagen"
+          src=" media/andes.png"
+          alt="Universidad de los Andes Logo"
+        />
+        <div
+          class="col-12 col-sm-9 col-md-9 col-lg-9 centradoVertical derecha chiquito"
+        >
+          <div>
+            <h2 class="texto">Universidad de los Andes 2016-2020</h2>
+            <h5 class="texto">Systems Engineering and Computation</h5>
+            <br />
+            <p class="texto">
+              I am currently attending to the program of Systems Engineering and
+              Computing at the University of los Andes. The engineering program
+              which I am enrrolled to is focused on software development, but it
+              toches upon topics like, enterprise and business architecture,
+              computer sciences, and technological infrastructure.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- Education -->
 
-
-</body>
-
+    <!-- Contacto -->
+    <div>
+      <div class="linea"></div>
+      <h1 class="tituloHome">Contacto</h1>
+      <!-- Social Icons -->
+      <div>
+        <ul class="lista">
+          <li class="itemLista">
+            <a href="https://www.linkedin.com/in/mateo-devia-vega-7b26b7197">
+              <img id="linkedin" src="media/linkedin.svg" alt="LinkedIn Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://github.com/mateodevia">
+              <img id="github" src="media/git.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://gitlab.com/mateodevia">
+              <img id="gitlab" src="media/gitlab.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://wa.me/573132803320">
+              <img id="whatsapp" src="media/whatsapp.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://www.facebook.com/mateo.devia">
+              <img id="facebook" src="media/facebook.svg" alt="Facebook Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://www.instagram.com/mateodevia/">
+              <img
+                id="instagram"
+                src="media/instagram.svg"
+                alt="Instagram Logo"
+              />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://twitter.com/MateoDevia5">
+              <img id="twitter" src="media/twitter.svg" alt="Twitter Logo" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Social Icons -->
+      <div class="linea"></div>
+      <div class="fondoGris container-fluid">
+        <div class="row justify-content-center">
+          <h4 class="col-12 col-sm-4 infoContacto">m.devia@uniandes.edu.co</h4>
+          <h4 class="col-12 col-sm-4 infoContacto">mateodevia2@hotmail.com</h4>
+          <h4 class="col-12 col-sm-4 infoContacto">Bogota, Colombia</h4>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -6,7 +6,7 @@ body {
   display: none;
 }
 
-.logo{
+.logo {
   border-radius: 50%;
   border: 5px solid #e74c3c;
   height: 100px;
@@ -20,12 +20,22 @@ body {
 
 #miNombre {
   float: left;
-  margin-top: 20px;
+  margin-top: 10px;
   color: white;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  margin-left: 150px;
+  font-family: "Raleway", sans-serif;
+  margin-left: 120px;
   margin-bottom: 0;
+}
+
+.carrera {
+  margin-top: 35px;
+  margin-left: 120px;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  width: 400px;
 }
 
 h2 {
@@ -36,16 +46,17 @@ h2 {
   position: relative;
   height: 60px;
   background-color: #e74c3c;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342), 0 6px 20px 0 rgba(0, 0, 0, 0.308);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342),
+    0 6px 20px 0 rgba(0, 0, 0, 0.308);
 }
 
-#navHorizontal{
+#navHorizontal {
   float: right;
   background-color: #e74c3c;
   height: 100%;
 }
 
-#navVertical{
+#navVertical {
   display: none;
 }
 
@@ -59,7 +70,7 @@ h2 {
   z-index: 2;
 }
 
-.titulosHorizontal{
+.titulosHorizontal {
   display: flex;
   justify-content: left;
   padding: 0;
@@ -70,11 +81,11 @@ h2 {
   height: 100%;
 }
 
-.titulosVertical{
+.titulosVertical {
   display: none;
 }
 
-.titulo{
+.titulo {
   list-style-type: none;
   font-size: 100%;
   padding-top: 25px;
@@ -82,15 +93,16 @@ h2 {
   padding-right: 2vw;
   color: white;
 }
-.titulo:hover{
+.titulo:hover {
   background-color: lightgray;
-  color: black;
+  color: #e74c3c;
+  font-weight: bolder;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: inherit;
   padding-bottom: 9px;
 }
@@ -98,71 +110,77 @@ a {
 a:hover {
   text-decoration: none;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: inherit;
   padding-bottom: 9px;
 }
 
-
-@media only screen and (max-width: 576px) {
-
+@media only screen and (max-width: 650px) {
   #rectangulo {
-    text-align: center;
+    text-align: right;
   }
 
-  #navHorizontal{
+  #navHorizontal {
     display: none;
   }
 
   #miNombre {
-    padding-top: 20px;
-    height: 50px;
+    padding-right: 10px;
+    padding-top: 10px;
     margin: 0;
     width: 100%;
   }
+  .carrera {
+    padding-right: 10px;
+    position: relative;
+    margin: 0;
+    font-size: 12px;
+    width: 100%;
+  }
+
   #boton {
-      display: block;
-      padding: 2vw;
-      font-size: 35px;
-      background-color:#e74c3c;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      position: absolute;
-      height: 60px;
-      padding-top: 0;
-      padding-bottom: 0;
-      color: white;
+    display: block;
+    padding: 2vw;
+    font-size: 35px;
+    background-color: #e74c3c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    height: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 10;
+    color: white;
   }
 
-  .logo{
-      display: none;
+  .logo {
+    display: none;
   }
 
-  .titulosHorizontal{
-      display: none;
+  .titulosHorizontal {
+    display: none;
   }
 
-  .titulosVertical{
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      padding: 0px;
-      margin: 0;
-      flex-direction: column;
-      font-size: 50%;
-      background-color: #e74c3c;
+  .titulosVertical {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 0px;
+    margin: 0;
+    flex-direction: column;
+    font-size: 50%;
+    background-color: #e74c3c;
   }
 
-  .titulo{
-      list-style-type: none;
-      font-size: 3vh;
-      padding-top: 2vw;
-      padding-bottom: 2vw;
-      padding-left: 2vw;
-      padding-right: 2vw;
-      border: 0;
-      z-index: 2;
+  .titulo {
+    list-style-type: none;
+    font-size: 3vh;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border: 0;
+    z-index: 2;
   }
-
 }

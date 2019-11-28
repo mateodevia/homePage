@@ -1,260 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Mateo Devia" />
+    <meta name="description" content="About me page" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="styles/proyectos.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="media/favicon.ico" />
+    <script src="index.js"></script>
+    <title>Mateo Devia</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <meta name="author" content="Mateo Devia" />
-  <meta name="description" content="About me page" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles/index.css" />
-  <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
-  <link rel="stylesheet" type="text/css" href="styles/proyectos.css" />
-  <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="icon" href="media/favicon.ico">
-  <script src="index.js"></script>
-  <title>Mateo Devia</title>
-</head>
-
-<body onload="proyectosClicked()">
-
-  <!-- Navbar -->
-  <div id="barraSticky">
-    <div id="rectangulo">
-      <!-- El boton para celulares -->
-      <button id="boton" onClick="handleClick()">☰</button>
-      <!-- El boton para celulares -->
-      <a href="./index.html">
-        <img class='logo' src="media/miFoto.jpeg" alt="Profile Picture" />
-      </a>
-      <a href="./index.html">
-        <h2 id="miNombre">Mateo Devia</h2>
-      </a>
-
-      <!-- Nav para computadores -->
-      <nav id='navHorizontal'>
-        <ul class='titulosHorizontal'>
-          <li class="titulo">
-            <a id="formacion1" href="./formacion.html">Education</a>
-          </li>
-          <li class="titulo">
-            <a id="proyectos1" href="./proyectos.html">Projects</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Nav para computadores -->
-
-      <!-- Nav para celulares -->
-      <nav id="navVertical">
-        <ul class='titulosVertical'>
-          <li id="formacion2" class="titulo">
-            <a href="./formacion.html">Education</a>
-          </li>
-          <li id="proyectos2" class="titulo">
-            <a href="./proyectos.html">Projects</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Nav para celulares -->
-    </div>
-  </div>
-  <!-- Navbar -->
-
-
-  <!-- Projects -->
-  <div>
-    <img class="panel" src="media/proyectos.jpg" alt="Software Engineering Image">
-  </div>
-  <div class="container-fluid">
-
-    <div class="row">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
-        <div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
-            <img class="imagen" src="media/macco.jpeg" alt="MACCO Accesorios Logo">
+  <body onload="proyectosClicked()">
+    <!-- Navbar -->
+    <div id="barraSticky">
+      <div id="rectangulo">
+        <!-- El boton para celulares -->
+        <button id="boton" onClick="handleClick()">☰</button>
+        <!-- El boton para celulares -->
+        <a href="./">
+          <img class="logo" src="media/miFoto.jpeg" alt="Profile Picture" />
+        </a>
+        <a href="./">
+          <div>
+            <h2 id="miNombre">Mateo Devia Vega</h2>
+            <h6 class="carrera">Systems and Computing Engineering Student</h6>
           </div>
-          <h2 class="texto">MACCO Accesorios</h2>
-          <br>
-          <p class="texto">MACCO accesorios is a colombian startup company dedicated to the importantion of women
-            accesories from
-            china. I developed a online catalog for the company to show their products to the world. The catalog is
-            still on a beta stage.
-          </p>
-          <a class="link" href="http://macco-accesorios.com">macco-accesorios.com</a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
-        <img class="imagen" src="media/macco.jpeg" alt="MACCO Accesorios Logo">
+        </a>
+
+        <!-- Nav para computadores -->
+        <nav id="navHorizontal">
+          <ul class="titulosHorizontal">
+            <li class="titulo">
+              <a id="proyectos1" href="./proyectos.html">Projects</a>
+            </li>
+            <li class="titulo">
+              <a id="formacion1" href="./formacion.html">Education</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav para computadores -->
+
+        <!-- Nav para celulares -->
+        <nav id="navVertical">
+          <ul class="titulosVertical">
+            <li id="proyectos2" class="titulo">
+              <a href="./proyectos.html">Projects</a>
+            </li>
+            <li id="formacion2" class="titulo">
+              <a href="./formacion.html">Education</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav para celulares -->
       </div>
     </div>
+    <!-- Navbar -->
 
-    <div class="row gris">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
-        <div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
-            <img class="imagen" src="media/gendigital.png" alt="Gen Digital Logo">
-          </div>
-          <h2 class="texto">Gen Digital SAC</h2>
-          <br>
-          <p class="texto">Gen Digital is a peruvian startup company that provides technological consulting services to
-            their clients. I participated on the developing of their landing page.
-          </p>
-          <a class="link" href="http://gen-digital.com">gen-digital.com</a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
-        <img class="imagen" src="media/gendigital.png" alt="Gen Digital Logo">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
-        <div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
-            <img class="imagen" src="media/tracktogo.png" alt="TrackToGo Logo">
-          </div>
-          <h2 class="texto">TrackToGo</h2>
-          <br>
-          <p class="texto">TrackToGo is a colombian startup company that developed a movile app that allows companies
-            track and monitor all their important assets. I am currently developing their landing page
-          </p>
-          <a class="link" href="https://tracktogo.co">tracktogo.co</a>
-        </div>
-      </div>
-      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
-        <img class="imagen" src="media/tracktogo.png" alt="TrackToGo Logo">
-      </div>
-    </div>
-
-    <div class="row gris">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
-        <div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
-            <img class="imagen" src="media/nidoo.png" alt="NIDOO Logo">
-          </div>
-          <h2 class="texto">NIDOO</h2>
-          <h5 class="texto">Diseño de Arquitectura</h5>
-          <br>
-          <p class="texto">NIDOO is a colombian startup company that provides the service of booking parkinglots arount
-            the city. As part of a software architecture course at my university I developed a proyect focused on the
-            design and prototyping a architectural solution to quality atributes on ther sistem.
-          </p>
-          <button class="botonRojo" onclick="videoArquisoft()">Ver Video</button>
-          <!-- Ventana modal -->
-          <div id="modalArquisoft" class="modal">
-            <!-- El video -->
-            <div class="modal-content">
-              <p><span class="close"><a href="javascript:cerrarArquisoft()">&times;</a></span></p>
-              <div class="videoCentrado">
-                <iframe height="315" src="https://youtube.com/embed/6v07aGTbeCY">
-                </iframe>
-              </div>
-            </div>
-            <!-- El video -->
-          </div>
-          <!-- Ventana modal -->
-        </div>
-      </div>
-      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
-        <img class="imagen" src="media/nidoo.png" alt="NIDOO Logo">
-      </div>
-    </div>
-
-    <div class="row ">
-      <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
-        <div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
-            <img class="imagen" src="media/regesta.PNG" alt="Regesta Analytics Logo">
-          </div>
-          <h2 class="texto">Regesta Analytics</h2>
-          <br>
-          <p class="texto">As part of a innovation course at my university I developed a project that aimed to the
-            construction of a tool that allowed to determine alingment of political campains on a given geografical area
-            of the country. It was based on historical data, and a linear mathematical model.
-          </p>
-
-          <button class="botonRojo" onclick="videoRegesta()">Ver Video</button>
-          <!-- Ventana modal -->
-          <div id="modalRegesta" class="modal">
-            <!-- El video -->
-            <div class="modal-content">
-              <p><span class="close"><a href="javascript:cerrarRegesta()">&times;</a></span></p>
-              <div class="videoCentrado">
-                <iframe height="315" src="https://youtube.com/embed/Fng-fW7l48g">
-                </iframe>
-              </div>
-            </div>
-            <!-- El video -->
-          </div>
-          <!-- Ventana modal -->
-
-          <button class="botonRojo" onclick="videoDemo()">Ver Demo</button>
-          <!-- Ventana modal -->
-          <div id="modalDemo" class="modal">
-            <!-- El video -->
-            <div class="modal-content">
-              <p><span class="close"><a href="javascript:cerrarDemo()">&times;</a></span></p>
-              <div class="videoCentrado">
-                <iframe height="315" src="https://youtube.com/embed/yrwrGwEMSkE">
-                </iframe>
-              </div>
-            </div>
-            <!-- El video -->
-          </div>
-          <!-- Ventana modal -->
-        </div>
-      </div>
-      <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
-        <img class="imagen" src="media/regesta.PNG" alt="Regesta Analytics Logo">
-      </div>
-    </div>
-  </div>
-  <!-- Projects -->
-
-
-  <!-- Contact -->
-  <div>
-    <div class="linea"></div>
-    <h1 class="tituloHome">Contacto</h1>
-    <!-- Social Icons -->
+    <!-- Projects -->
     <div>
-      <ul class="lista">
-        <li class="itemLista">
-          <a href="https://www.facebook.com/mateo.devia">
-            <img id="facebook" src="media/facebook.svg" alt="Facebook Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://www.instagram.com/mateodevia/">
-            <img id="instagram" src="media/instagram.svg" alt="Instagram Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://twitter.com/MateoDevia5">
-            <img id="twitter" src="media/twitter.svg" alt="Twitter Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://github.com/mateodevia">
-            <img id="github" src="media/git.svg" alt="GitHub Logo">
-          </a>
-        </li>
-      </ul>
+      <img
+        class="panel"
+        src="media/proyectos.jpg"
+        alt="Software Engineering Image"
+      />
     </div>
-    <!-- Social Icons -->
-    <div class="linea"></div>
-    <div class="fondoGris container-fluid">
-      <div class="row justify-content-center">
-        <h4 class="col-12 col-sm-4 infoContacto">m.devia@uniandes.edu.co</h4>
-        <h4 class="col-12 col-sm-4 infoContacto">cel: 313 280 3320</h4>
-        <h4 class="col-12 col-sm-4 infoContacto">Bogota, Colombia</h4>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+          <div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+              <img
+                class="imagen"
+                src="media/macco.jpeg"
+                alt="MACCO Accesorios Logo"
+              />
+            </div>
+            <h2 class="texto">MACCO Accesorios</h2>
+            <br />
+            <p class="texto">
+              MACCO accesorios is a colombian startup company dedicated to the
+              importantion of women accesories from china. I developed a online
+              catalog for the company to show their products to the world. The
+              catalog is still on a beta stage.
+            </p>
+            <a class="link" href="http://macco-accesorios.com"
+              >macco-accesorios.com</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+          <img
+            class="imagen"
+            src="media/macco.jpeg"
+            alt="MACCO Accesorios Logo"
+          />
+        </div>
+      </div>
+
+      <div class="row gris">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+          <div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+              <img
+                class="imagen"
+                src="media/gendigital.png"
+                alt="Gen Digital Logo"
+              />
+            </div>
+            <h2 class="texto">Gen Digital SAC</h2>
+            <br />
+            <p class="texto">
+              Gen Digital is a peruvian startup company that provides
+              technological consulting services to their clients. I participated
+              on the developing of their landing page.
+            </p>
+            <a class="link" href="http://gen-digital.com">gen-digital.com</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+          <img
+            class="imagen"
+            src="media/gendigital.png"
+            alt="Gen Digital Logo"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+          <div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+              <img
+                class="imagen"
+                src="media/tracktogo.png"
+                alt="TrackToGo Logo"
+              />
+            </div>
+            <h2 class="texto">TrackToGo</h2>
+            <br />
+            <p class="texto">
+              TrackToGo is a colombian startup company that developed a movile
+              app that allows companies track and monitor all their important
+              assets. I am currently developing their landing page
+            </p>
+            <a class="link" href="https://tracktogo.co">tracktogo.co</a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+          <img class="imagen" src="media/tracktogo.png" alt="TrackToGo Logo" />
+        </div>
+      </div>
+
+      <div class="row gris">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+          <div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+              <img class="imagen" src="media/nidoo.png" alt="NIDOO Logo" />
+            </div>
+            <h2 class="texto">NIDOO</h2>
+            <h5 class="texto">Diseño de Arquitectura</h5>
+            <br />
+            <p class="texto">
+              NIDOO is a colombian startup company that provides the service of
+              booking parkinglots arount the city. As part of a software
+              architecture course at my university I developed a proyect focused
+              on the design and prototyping a architectural solution to quality
+              atributes on ther sistem.
+            </p>
+            <button class="botonRojo" onclick="videoArquisoft()">
+              Ver Video
+            </button>
+            <!-- Ventana modal -->
+            <div id="modalArquisoft" class="modal">
+              <!-- El video -->
+              <div class="modal-content">
+                <p>
+                  <span class="close"
+                    ><a href="javascript:cerrarArquisoft()">&times;</a></span
+                  >
+                </p>
+                <div class="videoCentrado">
+                  <iframe
+                    height="315"
+                    src="https://youtube.com/embed/6v07aGTbeCY"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <!-- El video -->
+            </div>
+            <!-- Ventana modal -->
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+          <img class="imagen" src="media/nidoo.png" alt="NIDOO Logo" />
+        </div>
+      </div>
+
+      <div class="row ">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 centrado">
+          <div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont chiquito">
+              <img
+                class="imagen"
+                src="media/regesta.PNG"
+                alt="Regesta Analytics Logo"
+              />
+            </div>
+            <h2 class="texto">Regesta Analytics</h2>
+            <br />
+            <p class="texto">
+              As part of a innovation course at my university I developed a
+              project that aimed to the construction of a tool that allowed to
+              determine alingment of political campains on a given geografical
+              area of the country. It was based on historical data, and a linear
+              mathematical model.
+            </p>
+
+            <button class="botonRojo" onclick="videoRegesta()">
+              Ver Video
+            </button>
+            <!-- Ventana modal -->
+            <div id="modalRegesta" class="modal">
+              <!-- El video -->
+              <div class="modal-content">
+                <p>
+                  <span class="close"
+                    ><a href="javascript:cerrarRegesta()">&times;</a></span
+                  >
+                </p>
+                <div class="videoCentrado">
+                  <iframe
+                    height="315"
+                    src="https://youtube.com/embed/Fng-fW7l48g"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <!-- El video -->
+            </div>
+            <!-- Ventana modal -->
+
+            <button class="botonRojo" onclick="videoDemo()">Ver Demo</button>
+            <!-- Ventana modal -->
+            <div id="modalDemo" class="modal">
+              <!-- El video -->
+              <div class="modal-content">
+                <p>
+                  <span class="close"
+                    ><a href="javascript:cerrarDemo()">&times;</a></span
+                  >
+                </p>
+                <div class="videoCentrado">
+                  <iframe
+                    height="315"
+                    src="https://youtube.com/embed/yrwrGwEMSkE"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <!-- El video -->
+            </div>
+            <!-- Ventana modal -->
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
+          <img
+            class="imagen"
+            src="media/regesta.PNG"
+            alt="Regesta Analytics Logo"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Contacto -->
+    <!-- Projects -->
 
-</body>
-
+    <!-- Contact -->
+    <div>
+      <div class="linea"></div>
+      <h1 class="tituloHome">Contacto</h1>
+      <!-- Social Icons -->
+      <div>
+        <ul class="lista">
+          <li class="itemLista">
+            <a href="https://www.linkedin.com/in/mateo-devia-vega-7b26b7197">
+              <img id="linkedin" src="media/linkedin.svg" alt="LinkedIn Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://github.com/mateodevia">
+              <img id="github" src="media/git.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://gitlab.com/mateodevia">
+              <img id="gitlab" src="media/gitlab.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://wa.me/573132803320">
+              <img id="whatsapp" src="media/whatsapp.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://www.facebook.com/mateo.devia">
+              <img id="facebook" src="media/facebook.svg" alt="Facebook Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://www.instagram.com/mateodevia/">
+              <img
+                id="instagram"
+                src="media/instagram.svg"
+                alt="Instagram Logo"
+              />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://twitter.com/MateoDevia5">
+              <img id="twitter" src="media/twitter.svg" alt="Twitter Logo" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Social Icons -->
+      <div class="linea"></div>
+      <div class="fondoGris container-fluid">
+        <div class="row justify-content-center">
+          <h4 class="col-12 col-sm-4 infoContacto">m.devia@uniandes.edu.co</h4>
+          <h4 class="col-12 col-sm-4 infoContacto">mateodevia2@hotmail.com</h4>
+          <h4 class="col-12 col-sm-4 infoContacto">Bogota, Colombia</h4>
+        </div>
+      </div>
+    </div>
+    <!-- Contacto -->
+  </body>
 </html>

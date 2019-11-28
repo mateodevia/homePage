@@ -1,228 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="author" content="Mateo Devia" />
+    <meta name="description" content="About me page" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="styles/homePage.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="media/favicon.ico" />
+    <script src="index.js"></script>
+    <title>Mateo Devia Vega</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <meta name="author" content="Mateo Devia" />
-  <meta name="description" content="About me page" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" type="text/css" href="styles/index.css" />
-  <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
-  <link rel="stylesheet" type="text/css" href="styles/homePage.css" />
-  <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link rel="icon" href="media/favicon.ico">
-  <script src="index.js"></script>
-  <title>Mateo Devia</title>
-</head>
+  <body>
+    <!-- Navbar -->
+    <div id="barraSticky">
+      <div id="rectangulo">
+        <!-- El boton para celulares -->
+        <button id="boton" onClick="handleClick()">☰</button>
+        <!-- El boton para celulares -->
+        <a href="./">
+          <img class="logo" src="media/miFoto.jpeg" alt="Profile Picture" />
+        </a>
+        <a href="./">
+          <div>
+            <h2 id="miNombre">Mateo Devia Vega</h2>
+            <h6 class="carrera">Systems and Computing Engineering Student</h6>
+          </div>
+        </a>
 
-<body>
+        <!-- Nav para computadores -->
+        <nav id="navHorizontal">
+          <ul class="titulosHorizontal">
+            <li class="titulo">
+              <a id="proyectos1" href="./proyectos.html">Projects</a>
+            </li>
+            <li class="titulo">
+              <a id="formacion1" href="./formacion.html">Education</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav para computadores -->
 
-  <!-- Navbar -->
-  <div id="barraSticky">
-    <div id="rectangulo">
-      <!-- El boton para celulares -->
-      <button id="boton" onClick="handleClick()">☰</button>
-      <!-- El boton para celulares -->
-      <a href="./index.html">
-        <img class='logo' src="media/miFoto.jpeg" alt="Profile Picture" />
-      </a>
-      <a href="index.html">
-        <h2 id="miNombre">Mateo Devia</h2>
-      </a>
-
-      <!-- Nav para computadores -->
-      <nav id='navHorizontal'>
-        <ul class='titulosHorizontal'>
-          <li class="titulo">
-            <a id="formacion1" href="./formacion.html">Education</a>
-          </li>
-          <li class="titulo">
-            <a id="proyectos1" href="./proyectos.html">Projects</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Nav para computadores -->
-
-      <!-- Nav para celulares -->
-      <nav id="navVertical">
-        <ul class='titulosVertical'>
-          <li id="formacion2" class="titulo">
-            <a href="./formacion.html">Education</a>
-          </li>
-          <li id="proyectos2" class="titulo">
-            <a href="./proyectos.html">Projects</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- Nav para celulares -->
-    </div>
-  </div>
-  <!-- Navbar -->
-
-
-  <div>
-    <div id="foto">
-    </div>
-    <div id="sombreado">
-      <h1 id="quote">"KEEP MOVING FORWARD"</h1>
-    </div>
-    <!-- Academic Interests -->
-    <h1 class="tituloHome">Academic Interes</h1>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 col-sm-4 col-md-4 col-lg-4 interes">
-          <img height="150" src="media/architect.svg" alt="Architect Drawing">
-          <h3 class="tituloInteres">Software Architecture</h3>
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-4 interes">
-          <img height="150" src="media/fullstack.svg" alt="Full stack drawing">
-          <h3 class="tituloInteres">Full-Stack Development</h3>
-        </div>
-        <div class="col-12 col-sm-4 col-md-4 col-lg-4 interes">
-          <img height="150" src="media/mobile.svg" alt="Movile development drawing">
-          <h3 class="tituloInteres">Mobile Apps Development</h3>
-        </div>
+        <!-- Nav para celulares -->
+        <nav id="navVertical">
+          <ul class="titulosVertical">
+            <li id="proyectos2" class="titulo">
+              <a href="./proyectos.html">Projects</a>
+            </li>
+            <li id="formacion2" class="titulo">
+              <a href="./formacion.html">Education</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Nav para celulares -->
       </div>
     </div>
-    <!-- Academic Interests -->
+    <!-- Navbar -->
 
-
-    <!-- Habilities and Skills -->
-    <h1 class="tituloHome">Habilities and Skills</h1>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="barras col-12 col-sm-6 col-md-6 col-lg-6 col">
-          <h3 class="elementosBarras">Responsability</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:95%"></div>
-          </div>
-          <h3 class="elementosBarras">Team Work</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:80%"></div>
-          </div>
-          <h3 class="elementosBarras">Leadership</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:65%"></div>
-          </div>
-          <h3 class="elementosBarras">Efective Comunication</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:70%"></div>
-          </div>
-          <h3 class="elementosBarras">Adaptability to Change</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:80%"></div>
-          </div>
-        </div>
-        <div class="barras col-12 col-sm-6 col-md-6 col-lg-6 col">
-          <h3 class="elementosBarras">Analytical Thinking</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:85%"></div>
-          </div>
-          <h3 class="elementosBarras">Problem Solving</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:80%"></div>
-          </div>
-          <h3 class="elementosBarras">Mathematic Understanding</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:70%"></div>
-          </div>
-          <h3 class="elementosBarras">Coding Skills</h3>
-          <div class="w3-light-grey w3-round-xlarge elementosBarras">
-            <div class="w3-blue w3-round-xlarge barraCompetencia" style="height:24px;width:85%"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Habilities and Skills -->
-
-
-  <!-- Main Tools -->
-  <h1 class="tituloHome">Main Tools</h1>
-  <div id="tools" class="container-fluid">
-    <div class="row justify-content-center">
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/java.png" alt="Java Logo" class="herramienta">
-      </div>
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/python.png" alt="Python Logo" class="herramienta">
-      </div>
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/django.png" alt="Django Logo" class="herramienta">
-      </div>
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/html.png" alt="HTML Logo" class="herramienta">
-      </div>
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/css.png" alt="CSS Logo" class="herramienta">
-      </div>
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/javascript.png" alt="JavaScript Logo" class="herramienta">
-      </div>
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/react.png" alt="React JS Logo" class="herramienta">
-      </div>
-
-      <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
-        <img src="media/node.png" alt="Node JS Logo" class="herramienta">
-      </div>
-    </div>
-  </div>
-  <!-- Main Tools -->
-
-
-  <!-- Contact -->
-  <div>
-    <div class="linea"></div>
-    <h1 class="tituloHome">Contact</h1>
-    <!-- Social Icons -->
     <div>
-      <ul class="lista">
-        <li class="itemLista">
-          <a href="https://www.facebook.com/mateo.devia">
-            <img id="facebook" src="media/facebook.svg" alt="Facebook Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://www.instagram.com/mateodevia/">
-            <img id="instagram" src="media/instagram.svg" alt="Instagram Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://twitter.com/MateoDevia5">
-            <img id="twitter" src="media/twitter.svg" alt="Twitter Logo">
-          </a>
-        </li>
-        <li class="itemLista">
-          <a href="https://github.com/mateodevia">
-            <img id="github" src="media/git.svg" alt="GitHub Logo">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- Social Icons -->
-    <div class="linea"></div>
-    <div class="fondoGris container-fluid">
-      <div class="row justify-content-center">
-        <h4 class="col-12 col-sm-4 infoContacto">m.devia@uniandes.edu.co</h4>
-        <h4 class="col-12 col-sm-4 infoContacto">cel: 313 280 3320</h4>
-        <h4 class="col-12 col-sm-4 infoContacto">Bogota, Colombia</h4>
+      <div id="foto"></div>
+      <div id="sombreado">
+        <h1 id="quote">"KEEP MOVING FORWARD"</h1>
+      </div>
+      <!-- Academic Interests -->
+      <h1 class="tituloHome">Academic Interes</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 interes">
+            <img
+              height="150"
+              src="media/architect.svg"
+              alt="Architect Drawing"
+            />
+            <h3 class="tituloInteres">Software Architecture</h3>
+          </div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 interes">
+            <img
+              height="150"
+              src="media/fullstack.svg"
+              alt="Full stack drawing"
+            />
+            <h3 class="tituloInteres">Full-Stack Development</h3>
+          </div>
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 interes">
+            <img
+              height="150"
+              src="media/mobile.svg"
+              alt="Movile development drawing"
+            />
+            <h3 class="tituloInteres">Mobile Apps Development</h3>
+          </div>
+        </div>
+      </div>
+      <!-- Academic Interests -->
+
+      <!-- Habilities and Skills -->
+      <h1 class="tituloHome">Habilities and Skills</h1>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="barras col-12 col-sm-6 col-md-6 col-lg-6 col">
+            <h3 class="elementosBarras">Responsability</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:95%"
+              ></div>
+            </div>
+            <h3 class="elementosBarras">Team Work</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:80%"
+              ></div>
+            </div>
+            <h3 class="elementosBarras">Leadership</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:65%"
+              ></div>
+            </div>
+            <h3 class="elementosBarras">Efective Comunication</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:70%"
+              ></div>
+            </div>
+            <h3 class="elementosBarras">Adaptability to Change</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:80%"
+              ></div>
+            </div>
+          </div>
+          <div class="barras col-12 col-sm-6 col-md-6 col-lg-6 col">
+            <h3 class="elementosBarras">Analytical Thinking</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:85%"
+              ></div>
+            </div>
+            <h3 class="elementosBarras">Problem Solving</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:80%"
+              ></div>
+            </div>
+            <h3 class="elementosBarras">Mathematic Understanding</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:70%"
+              ></div>
+            </div>
+            <h3 class="elementosBarras">Coding Skills</h3>
+            <div class="w3-light-grey w3-round-xlarge elementosBarras">
+              <div
+                class="w3-blue w3-round-xlarge barraCompetencia"
+                style="height:24px;width:85%"
+              ></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Contact -->
+    <!-- Habilities and Skills -->
 
-</body>
+    <!-- Main Tools -->
+    <h1 class="tituloHome">Main Tools</h1>
+    <div id="tools" class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/java.png" alt="Java Logo" class="herramienta" />
+        </div>
 
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/python.png" alt="Python Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/kotlin.png" alt="Kotlin Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/html.png" alt="HTML Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/css.png" alt="CSS Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img
+            src="media/javascript.png"
+            alt="JavaScript Logo"
+            class="herramienta"
+          />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/android.png" alt="Android Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img
+            src="media/firebase.png"
+            alt="Firebase Logo"
+            class="herramienta"
+          />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/mongo.png" alt="Mongo Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img
+            src="media/postgres.png"
+            alt="PostgreSQL Logo"
+            class="herramienta"
+          />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/react.png" alt="React JS Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/django.png" alt="Django Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/node.png" alt="Node JS Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/meteor.png" alt="Meteor Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/github.png" alt="GitHub Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/gitlab.png" alt="GitLab Logo" class="herramienta" />
+        </div>
+
+        <div class="col-6 col-sm-3 col-md-2 col-lg-2 imagenHerramienta">
+          <img src="media/heroku.png" alt="Heroku Logo" class="herramienta" />
+        </div>
+      </div>
+    </div>
+    <!-- Main Tools -->
+
+    <!-- Contact -->
+    <div>
+      <div class="linea"></div>
+      <h1 class="tituloHome">Contact</h1>
+      <!-- Social Icons -->
+      <div>
+        <ul class="lista">
+          <li class="itemLista">
+            <a href="https://www.linkedin.com/in/mateo-devia-vega-7b26b7197">
+              <img id="linkedin" src="media/linkedin.svg" alt="LinkedIn Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://github.com/mateodevia">
+              <img id="github" src="media/git.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://gitlab.com/mateodevia">
+              <img id="gitlab" src="media/gitlab.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://wa.me/573132803320">
+              <img id="whatsapp" src="media/whatsapp.svg" alt="GitHub Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://www.facebook.com/mateo.devia">
+              <img id="facebook" src="media/facebook.svg" alt="Facebook Logo" />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://www.instagram.com/mateodevia/">
+              <img
+                id="instagram"
+                src="media/instagram.svg"
+                alt="Instagram Logo"
+              />
+            </a>
+          </li>
+          <li class="itemLista">
+            <a href="https://twitter.com/MateoDevia5">
+              <img id="twitter" src="media/twitter.svg" alt="Twitter Logo" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Social Icons -->
+      <div class="linea"></div>
+      <div class="fondoGris container-fluid">
+        <div class="row justify-content-center">
+          <h4 class="col-12 col-sm-4 infoContacto">m.devia@uniandes.edu.co</h4>
+          <h4 class="col-12 col-sm-4 infoContacto">mateodevia2@hotmail.com</h4>
+          <h4 class="col-12 col-sm-4 infoContacto">Bogota, Colombia</h4>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+  </body>
 </html>
