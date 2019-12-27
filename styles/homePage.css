@@ -22,12 +22,13 @@
 
 #quote {
   color: white;
-  font-size: 10vw;
+  font-size: 3vw;
+  margin: 15px;
 }
 
 .interes {
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .tituloInteres {
@@ -60,8 +61,18 @@
   margin-bottom: 10px;
 }
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (max-width: 850px) {
   #quote {
-    font-size: 8vw;
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #quote {
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #quote {
+    font-size: 6vw;
   }
 }

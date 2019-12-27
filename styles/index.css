@@ -1,7 +1,7 @@
 body {
   margin: 0px;
 }
-.panel{
+.panel {
   width: 100%;
   z-index: -1;
 }
@@ -11,8 +11,22 @@ body {
   margin: 25px;
   margin-bottom: 30px;
 }
+h4 {
+  font-size: 20px;
+}
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
