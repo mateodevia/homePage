@@ -44,19 +44,6 @@ h6 {
   color: red;
 }
 
-.botonRojo {
-  background-color: #e74c3c;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 4px 10px 4px;
-  cursor: pointer;
-}
-
 .modal {
   display: none;
   position: block;
