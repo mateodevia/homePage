@@ -19,6 +19,7 @@ body {
 }
 
 #miNombre {
+  font-size: 24px;
   float: left;
   margin-top: 10px;
   color: white;
@@ -38,10 +39,6 @@ body {
   width: 400px;
 }
 
-h2 {
-  font-size: 1.5rem;
-}
-
 #rectangulo {
   position: relative;
   height: 60px;
@@ -57,6 +54,7 @@ h2 {
 }
 
 #navVertical {
+  margin-top: 5px;
   display: none;
 }
 
@@ -87,11 +85,18 @@ h2 {
 
 .titulo {
   list-style-type: none;
-  font-size: 100%;
+  font-size: 16px;
   padding-top: 25px;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
   color: white;
+}
+.tituloSeleccionado {
+  border-bottom: 4px solid;
+}
+
+.tituloSeleccionadoMovil {
+  border-left: 8px solid !important;
 }
 .titulo:hover {
   background-color: lightgray;
@@ -147,7 +152,7 @@ a:hover {
     outline: none;
     cursor: pointer;
     position: absolute;
-    height: 60px;
+    height: 58px;
     padding-top: 0;
     padding-bottom: 0;
     z-index: 10;
@@ -175,7 +180,7 @@ a:hover {
 
   .titulo {
     list-style-type: none;
-    font-size: 3vh;
+    font-size: 16px;
     padding-top: 2vw;
     padding-bottom: 2vw;
     padding-left: 2vw;

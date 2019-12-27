@@ -1,7 +1,7 @@
 {
-  "name": "proyecto-1",
+  "name": "personal-webpage",
   "version": "1.0.0",
-  "description": "This proyect was created to show the world who I am, and what my academic interests are. It has information about my academic path, and all my most relevant proyects.",
+  "description": "This proyect was created to show the world who I am, and what my academic interests are. It has information about my academic and profetional path, and all my most relevant proyects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
