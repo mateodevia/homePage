@@ -1,3 +1,12 @@
+h6 {
+  margin: 0;
+}
+
+.row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .imagen {
   z-index: -1;
   width: 200px;
@@ -9,7 +18,7 @@
   text-align: center;
 }
 
-.cont{
+.cont {
   text-align: center;
   height: 300px;
   line-height: 300px;
@@ -44,7 +53,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 10px 4px 10px 4px;
   cursor: pointer;
 }
 
@@ -53,8 +62,8 @@
   position: block;
   z-index: 1;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
   align-items: center;
 }
 
@@ -83,12 +92,29 @@
   cursor: pointer;
 }
 
+.logoAyudemonos {
+  font-family: Maven Pro, sans-serif;
+  font-weight: normal;
+  color: #44dbb8;
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  background-color: #323433;
+  vertical-align: middle;
+}
+
 iframe {
   width: 95%;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 750px) and (min-width: 576px) {
+  .imagen {
+    width: 150px;
+  }
+}
 
+@media only screen and (max-width: 576px) {
   .modal-content {
     padding: 0;
     border: 0;
@@ -100,7 +126,7 @@ iframe {
   }
 
   .chiquito {
-    display: inherit;;
+    display: inherit;
   }
 
   .botonRojo {

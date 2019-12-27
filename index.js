@@ -8,33 +8,18 @@ function handleClick() {
   if (!menuEstaAbierto) {
     document.getElementById("navVertical").style.display = "block";
     menuEstaAbierto = true;
-  }
-  else {
+  } else {
     document.getElementById("navVertical").style.display = "none";
     menuEstaAbierto = false;
   }
 }
 // eslint-disable-next-line no-unused-vars
-function homeClicked() {
-  window.location = "/";
-  document.getElementById("formacion1").style.borderBottom = "none";
-  document.getElementById("formacion2").style.borderLeft = "none";
-  document.getElementById("proyectos1").style.borderBottom = "none";
-  document.getElementById("proyectos2").style.borderLeft = "none";
+function videoFastCab() {
+  document.getElementById("modalFastCab").style.display = "block";
 }
 // eslint-disable-next-line no-unused-vars
-function formacionClicked() {
-  document.getElementById("formacion1").style.borderBottom = "4px solid";
-  document.getElementById("formacion2").style.borderLeft = "8px solid";
-  document.getElementById("proyectos1").style.borderBottom = "none";
-  document.getElementById("proyectos2").style.borderLeft = "none";
-}
-// eslint-disable-next-line no-unused-vars
-function proyectosClicked() {
-  document.getElementById("formacion1").style.borderBottom = "none";
-  document.getElementById("formacion2").style.borderLeft = "none";
-  document.getElementById("proyectos1").style.borderBottom = "4px solid";
-  document.getElementById("proyectos2").style.borderLeft = "8px solid";
+function cerrarFastCab() {
+  document.getElementById("modalFastCab").style.display = "none";
 }
 // eslint-disable-next-line no-unused-vars
 function videoArquisoft() {
