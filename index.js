@@ -4,6 +4,30 @@ let menuEstaAbierto = false;
 // I turned off the no unused variables rule because I define event handler function which are never called on the file, but that are called from the HTML files
 
 // eslint-disable-next-line no-unused-vars
+function setLanguage(language) {
+  document.documentElement.lang = language;
+  window.sessionStorage.idioma = language;
+  document.getElementById("modalIdiomas").style.display = "none";
+  document.documentElement.lang = language;
+}
+
+// eslint-disable-next-line no-unused-vars
+function preguntarLenguaje() {
+  document.getElementById("modalIdiomas").style.display = "block";
+}
+
+// eslint-disable-next-line no-unused-vars
+function cargarLenguaje() {
+  if (window.sessionStorage.idioma) {
+    if (window.sessionStorage.idioma === "es") {
+      document.documentElement.lang = "es";
+    }
+  } else {
+    preguntarLenguaje();
+  }
+}
+
+// eslint-disable-next-line no-unused-vars
 function handleClick() {
   if (!menuEstaAbierto) {
     document.getElementById("navVertical").style.display = "block";

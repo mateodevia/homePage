@@ -37,7 +37,12 @@
         <a href="./">
           <div>
             <h2 id="miNombre">Mateo Devia Vega</h2>
-            <h6 class="carrera">Systems and Computing Engineering Student</h6>
+            <h6 class="carrera en">
+              Systems and Computing Engineering Student
+            </h6>
+            <h6 class="carrera es">
+              Estudiante de Ingenieria de Sistemas
+            </h6>
           </div>
         </a>
 
@@ -196,5 +201,19 @@
         </div>
       </div>
     </div>
+    <!-- Ventana modal Idiomas-->
+    <div id="modalIdiomas" class="modal">
+      <div class="modal-content">
+        <div class="contenedorIdioma">
+            <h1 class="preguntaLenguaje">What Language do you Prefer?</h1 class="preguntaLenguaje">
+            <button onclick="setLanguage('en')" class="botonRojo">English</button>
+            <button onclick="setLanguage('es')" class="botonRojo">Español</button>
+        </div>
+      </div>
+    </div>
+    <!-- Ventana modal Idiomas-->
+    <script>
+      cargarLenguaje()
+    </script>
   </body>
 </html>
