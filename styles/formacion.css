@@ -1,17 +1,34 @@
+.row {
+  padding: 0px 10px 0px 10px;
+  vertical-align: middle;
+}
+
+.tituloEducacion {
+  margin-left: calc(5vw - 5px);
+}
+
+.tituloEducacionD {
+  margin-right: calc(5vw - 5px);
+}
+
 .imagen {
   z-index: -1;
   height: 100%;
   text-align: center;
   align-items: center;
+  padding: 10px 5vw 10px 5vw;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .centradoVertical {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .texto {
-  margin: 20px;
+  margin: 15px 0px 15px 0px;
   justify-content: baseline;
 }
 
@@ -27,12 +44,29 @@ h1 {
 }
 
 @media only screen and (max-width: 576px) {
-
   .grande {
     display: none;
   }
 
   .chiquito {
-    display: inherit;;
+    display: inherit;
+  }
+
+  .imagen {
+    padding: 20px 15vw 10px 15vw;
+  }
+
+  .tituloEducacion {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  .tituloEducacionD {
+    margin-right: 0px;
+    text-align: center;
+  }
+
+  .centrarChiquito {
+    text-align: center;
   }
 }
