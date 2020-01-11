@@ -49,11 +49,17 @@
         <!-- Nav para computadores -->
         <nav id="navHorizontal">
           <ul class="titulosHorizontal">
-            <li class="titulo tituloSeleccionado">
+            <li class="titulo tituloSeleccionado en">
               <a href="./projects.html">Projects</a>
             </li>
-            <li class="titulo">
+            <li class="titulo tituloSeleccionado es">
+              <a href="./projects.html">Proyectos</a>
+            </li>
+            <li class="titulo en">
               <a href="./education.html">Education</a>
+            </li>
+            <li class="titulo es">
+              <a href="./education.html">Educación</a>
             </li>
           </ul>
         </nav>
@@ -62,11 +68,17 @@
         <!-- Nav para celulares -->
         <nav id="navVertical">
           <ul class="titulosVertical">
-            <li class="titulo tituloSeleccionadoMovil">
+            <li class="titulo tituloSeleccionadoMovil en">
               <a href="./projects.html">Projects</a>
             </li>
-            <li class="titulo">
+            <li class="titulo tituloSeleccionadoMovil es">
+              <a href="./projects.html">Projectos</a>
+            </li>
+            <li class="titulo en">
               <a href="./education.html">Education</a>
+            </li>
+            <li class="titulo e3s">
+              <a href="./education.html">Educación</a>
             </li>
           </ul>
         </nav>
@@ -91,20 +103,31 @@
               <img
                 class="imagen"
                 src="media/ChatCenterLogo.svg"
-                alt="MACCO Accesorios Logo"
+                alt="Chat Center Logo"
               />
             </div>
             <h2 class="texto">Chat Center</h2>
-            <h5 class="texto">WhatsApp chatbot with human interaction</h5>
+            <h5 class="texto en">WhatsApp chatbot with human interaction</h5>
+            <h5 class="texto es">Chatbot de Whatsapp con interacción humana</h5>
             <br />
-            <p class="texto">
-              Chat center is an app that aims to replace traditional call
+            <p class="texto en">
+              Chat Center is an app that aims to replace traditional call
               centers. It uses Whatsapp as its main communication tool. Users
               can interact with a chatbot that provides certain functionalities,
               and if the chatbot is not enough, the user can always decide to
               chat with a real employee. The employee will respond to the user´s
               requirements through a web chat that seamlessly integrates with
               the ongoing WhatsApp conversation.
+            </p>
+            <p class="texto es">
+              Chat Center es una aplicación que pretende reemplazar los call
+              centers tradicionales usando Whatsapp como principal medio de
+              comunicación. Los clientes le escriben a un numero de Whatsapp
+              e interactuan con el chatbot que ofrece varias funcionalidades
+              básicas. Si las funcionalidades del chatbot no son suficientes,
+              los usuarios pueden decidir comunicarse con un empleado real.
+              En dado caso, los empleados pueden responder a todos los usuarios
+              desde una aplicación web que se conecta con Whatsapp.
             </p>
             <a class="link" href="https://chatcenterwa.herokuapp.com/"
               >chatcenterwa.herokuapp.com</a
@@ -130,18 +153,30 @@
               />
             </div>
             <h2 class="texto">Pharmaco</h2>
-            <h5 class="texto">Mobile App for pharmacy logistics</h5>
+            <h5 class="texto en">Mobile App for pharmacy logistics</h5>
+            <h5 class="texto es">Aplicación móvil para entregar medicamentos de la EPS</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               Pharmaco is a mobile app that aims to speed up the delivery of
               medicines in pharmacies of Colombia. The app uses: QR codes, image
               to text recognition, and GPS to enhance the delivery process
               inside and outside the pharmacy. The app was developed for Android
               and iOS.
             </p>
-            <button class="botonRojo" onclick="videoFastCab()">
+            <p class="texto es">
+              Pharmaco es una aplicación móvil para Android desarrollada en Kotlin
+              para agilizar el proceso de entrega de medicamentos POS para los usuarios
+              de EPS. La aplicación usa códigos QR, reconocimiento de imágenes con
+              Machine Learning, y GPS.
+            </p>
+            <!--
+            <button class="botonRojo enInline" onclick="videoFastCab()">
               Watch Demo
             </button>
+            <button class="botonRojo esInline" onclick="videoFastCab()">
+              Ver Demo
+            </button>
+            -->
           </div>
         </div>
         <div class="col-12 col-sm-4 col-md-4 col-lg-4 cont grande">
@@ -155,28 +190,42 @@
               <img
                 class="imagen"
                 src="media/FastCab.svg"
-                alt="MACCO Accesorios Logo"
+                alt="Fast Cab Logo"
               />
             </div>
             <h2 class="texto">Fast Cab</h2>
-            <h5 class="texto">Web app for requesting taxis through WhatsApp</h5>
+            <h5 class="texto en">Web app for requesting taxis through WhatsApp</h5>
+            <h5 class="texto es">Aplicación web para pedir taxis por Whatsapp</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               Fast Cab is an app for requesting taxis. It is integrated with
               Whatsapp to allow its users to request a taxi sending an address
               through Whatsapp. The drivers interact with the users using a web
-              app wich tracks their current location in real time. Through the
+              app which tracks their current location in real time. Through the
               app they receive the trips requested by the users so that they can
               accept them. Once a driver accepts a trip, the user will receive
               all the driver´s information, as well as a link to track the
               location of the driver in real time.
             </p>
+            <p class="texto es">
+              Fast Cab es una aplicación para pedir taxis. Está integrada con Whatsapp
+              para permitirle a los clientes pedir un taxi mandando la dirección donde
+              quieren ser recogidos por Whatsapp. El conductor interactua con los clientes
+              usando una aplicación web que rastrea su posición en tiempo real. A travez
+              de la aplicación los conductores reciben y aceptan los servicios solicitados
+              por los clientes. Cuando un conductor acepta el servicio, el cliente recibe
+              la información del taxista, asi como un link para ver la ubicación del conductor
+              en tiempo real.
+            </p>
             <a class="link" href="https://taxis-whatsapp.herokuapp.com/"
               >taxis-whatsapp.herokuapp.com</a
             >
             <br />
-            <button class="botonRojo" onclick="videoFastCab()">
+            <button class="botonRojo enInline" onclick="videoFastCab()">
               Watch Demo
+            </button>
+            <button class="botonRojo esInline" onclick="videoFastCab()">
+              Ver Demo
             </button>
             <!-- Ventana modal -->
             <div id="modalFastCab" class="modal">
@@ -204,7 +253,7 @@
           <img
             class="imagen"
             src="media/FastCab.svg"
-            alt="MACCO Accesorios Logo"
+            alt="Fast Cab Logo"
           />
         </div>
       </div>
@@ -215,21 +264,34 @@
               <img
                 class="imagen"
                 src="media/lostroncos.png"
-                alt="MACCO Accesorios Logo"
+                alt="Los tronscos Page Screenshot"
               />
             </div>
             <h2 class="texto">Los Troncos</h2>
-            <h5 class="texto">
+            <h5 class="texto en">
               Blockchained based system to mitigate illegal timber traffic
             </h5>
+            <h5 class="texto es">
+              Sistema basado en block chain para mitigar el tráfico ilegal de madera
+            </h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               I won the third place recognition in a hackathon where the
               challenge was to develop technological tools to mitigate and
               control illegal timber traffic. The proposed solution was a
               blockchain based system, that tracks wood through the hole
               industrial process, by using complementary technologies, such as
               SMS messages, QR codes and GPS.
+            </p>
+            <p class="texto es">
+              Obtuve el tercer puesto en un hackatón donde el reto
+              consistía en desarrollar soluciones tecnológicas para mitigar
+              y controlar el trafico ilegal de madera. La solución propuesta
+              fue un sistema de monitoreo basado en Blockchain, que rastreaba
+              la madera desde el punto de tala, hasta el punto de distribución
+              final, haciendo uso de tecnologías como mensajes SMS, códigos QR,
+              aplicaciones móviles, y GPS.
+
             </p>
             <a class="link" href="http://lostroncos.site/">lostroncos.site</a>
           </div>
@@ -238,7 +300,7 @@
           <img
             class="imagen"
             src="media/lostroncos.png"
-            alt="MACCO Accesorios Logo"
+            alt="Los Troncos Page Screenshot"
           />
         </div>
       </div>
@@ -253,9 +315,10 @@
               />
             </div>
             <h2 class="texto">Agro Cluster</h2>
-            <h5 class="texto">BI tool for joining farmers</h5>
+            <h5 class="texto en">BI tool for joining farmers</h5>
+            <h5 class="texto es">Herramienta de BI para formar asociaciones entre campesinos</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               I won the first place recognition in a hackathon where the
               Agrarian banck proposed the challenge of finding technology based
               strategies to include farmers in the banking industry. The
@@ -263,11 +326,20 @@
               farmers for them to conform associations among them, and become
               more competitive in the market.
             </p>
-            <h6>BI Tool</h6>
+            <p class="texto es">
+              Obtuve el primer puesto en una hackatón donde el banco agrario propuso
+              propuso un reto que consistía en encontrar una estrategia tecnológica
+              para bancarizar a la población campesina del país. La solución propuesta fue una herramienta web de BI que formaba clusters entre los campesinos para
+              que pudieran crear alianzas y volverse más competitivos en el mercado.
+
+            </p>
+            <h6 class="en">BI Tool:</h6>
+            <h6 class="es">Herramienta de BI:</h6>
             <a class="link" href="https://nacaceres.github.io/BancoAgrario/"
               >nacaceres.github.io/BancoAgrario</a
             >
-            <h6>Tool for the farmers</h6>
+            <h6 class="en">Tool for the farmers:</h6>
+            <h6 class="es">Herramienta para los campesinos:</h6>
             <a class="link" href="https://agro-cluster.herokuapp.com/"
               >agro-cluster.herokuapp.com</a
             >
@@ -288,19 +360,28 @@
               <img
                 class="imagen"
                 src="media/Ayudemonos.png"
-                alt="MACCO Accesorios Logo"
+                alt="Ayudémonos Logo"
               />
             </div>
             <h2 class="texto">Ayudémonos</h2>
-            <h5 class="texto">Colaborative Online TO-DO List</h5>
+            <h5 class="texto en">Colaborative Online TO-DO List</h5>
+            <h5 class="texto es">Lista de tareas colaborativa</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               Ayudémonos is a web app aimed to increase productivity among
               teams. It is a real time shared TO-DO list that allow its users to
               post tasks for them or for any of their team mates. Users can ask
               for help in their tasks and other users can decide wether or not
               to help them. Additionally, the page is compleately accesible
               through the keyboard.
+            </p>
+            <p class="texto es">
+              Ayudémonos es una aplicación web que busca aumentar la prooductividad
+              en equipos de trabajo. Es una lista de tareas en tiempo real que le
+              permite a los usuarios agregar tareas para ellos mismos, o cualquiera
+              de sus compañeros del grupo. Además, los usuarios pueden pedir ayuda en
+              sus tareas, y sus compañeros pueden decidir ayudarlos. Adicionalmente,
+              este aplicacion es completamente usable mediante el teclado.
             </p>
             <a class="link" href="https://ayudemonos-app.herokuapp.com/"
               >ayudemonos-app.herokuapp.com</a
@@ -311,7 +392,7 @@
           <img
             class="imagen"
             src="media/Ayudemonos.png"
-            alt="MACCO Accesorios Logo"
+            alt="Ayudémonos Logo"
           />
         </div>
       </div>
@@ -326,15 +407,24 @@
               />
             </div>
             <h2 class="texto">MACCO Accesorios</h2>
-            <h5 class="texto">E-comerce Online Catalog</h5>
+            <h5 class="texto en">E-commerse online catalog</h5>
+            <h5 class="texto es">Catálogo en línea</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               MACCO accesorios is a colombian startup company dedicated to sell
               and distribute women accesories. I developed a online catalog for
               the company to show their products to the world. The web page also
               provides a friendly UI for authorized users to update the
               information in the database, so that the catalog is always up to
               date.
+            </p>
+            <p class="texto es">
+              MACCO accesorios es una empresa colombiana dedicada a la producción
+              y venta de accesorios para mujeres. Desarrollé un catálogo en línea para
+              que esta empresa pueda exhibir sus producto al mundo. La página web
+              tambien provee una interfaz gráfica amigable para que los usuarios
+              autorizados puedan actualizar la información de la base de datos para
+              que el catálogo siempre perteneza actualizado.
             </p>
             <a class="link" href="http://www.macco-accesorios.com"
               >www.macco-accesorios.com</a
@@ -363,10 +453,16 @@
             <h2 class="texto">Gen Digital SAC</h2>
             <h5 class="texto">Landing Page</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               Gen Digital is a Peruvian startup company that provides
               technological and legal consulting services to their clients. I
-              participated on the development of their landing page.
+              participated on the design and development of their landing page.
+            </p>
+            <p class="texto es">
+              Gen Digital es una empresa peruana que provee servicios de
+              consultoría tecnológica y legal a sus clientes. Participe en el
+              diseño y desarrollo de una "landing page" que muestra toda la
+              información básica de la empresa.
             </p>
             <a class="link" href="http://gen-digital.com">gen-digital.com</a>
           </div>
@@ -393,10 +489,16 @@
             <h2 class="texto">TrackToGo</h2>
             <h5 class="texto">Landing Page</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               TrackToGo is a Colombian startup company that developed a mobile
               app that allows companies to track and monitor all their important
               assets. I am currently developing the landing page of the company.
+            </p>
+            <p class="texto es">
+              TrackToGo es una empresa colombiana que desarrolló una aplicación
+              movil que le permite a las empresas hacer seguimiento de todos sus
+              recursos fijos, ó en movimiento. Estóy desarrollando una "landing page"
+              para esta empresa.
             </p>
             <a class="link" href="https://tracktogo.co">tracktogo.co</a>
           </div>
@@ -413,21 +515,32 @@
               <img class="imagen" src="media/nidoo.png" alt="NIDOO Logo" />
             </div>
             <h2 class="texto">NIDOO</h2>
-            <h5 class="texto">Software Architecture Design</h5>
+            <h5 class="texto en">Software Architecture Design</h5>
+            <h5 class="texto es">Diseño de arquitectura</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               I developed a software architectural design for a Colombian
               startup company that provides parking lot services to their
               clients. Their main difficulty was to implement an on demand
-              service of parking lot reservation.
-            </p>
-            <p class="texto">
-              The design used the architectural styles publish/subscribe, and
+              service of parking lot reservation. The design used the
+              architectural styles publish/subscribe, and
               microservices to improve the systems latency, security and
-              maintainability
+              maintainability.
             </p>
-            <button class="botonRojo" onclick="videoArquisoft()">
+            <p class="texto es">
+              Realicé un diseño y prototipado de arquitectura para la empresa de Colombiana
+              NIDOO. NIDOO provee servicios de arrendamiento de parqueaderos a
+              través de una plataforma web, y estaban en el proceso de desarrollar
+              su aplicación móvil. Su principal reto era la implementación de un
+              servicio en tiempo real. El diseño propuesto usaba el estilo arquitectónico
+              Publicador-Suscriptor y microservicios para favorecer la latencia, seguridad,
+               y mantenibilidad del sistema.
+            </p>
+            <button class="botonRojo enInline" onclick="videoArquisoft()">
               Watch Video
+            </button>
+            <button class="botonRojo esInline" onclick="videoArquisoft()">
+              Ver Video
             </button>
             <!-- Ventana modal -->
             <div id="modalArquisoft" class="modal">
@@ -467,18 +580,27 @@
               />
             </div>
             <h2 class="texto">Regesta Analytics</h2>
-            <h5 class="texto">Tool for Political Campaing Analysis</h5>
+            <h5 class="texto en">Tool for Political Campaing Analysis</h5>
+            <h5 class="texto es">Herramienta para análisis de campañas políticas</h5>
             <br />
-            <p class="texto">
+            <p class="texto en">
               I developed a project that aimed to provide a tool that allowed
               its users to determine alignment of political campains on a given
               geografical area of the Colombia according to the citizens
               interests. It was based on historical data, and a linear
               mathematical model.
             </p>
-
-            <button class="botonRojo" onclick="videoRegesta()">
+            <p class="texto es">
+              I desarrollé una herramienta que le permitía a los usuarios estimar
+              el alineamiento de una campaña política en una cierta región geográfica.
+              El programa estaba basado en un modelo matemático lineal que usaba datos historicos para
+              calcular los intereses de los ciudadanos en cada zona.
+            </p>
+            <button class="botonRojo enInline" onclick="videoRegesta()">
               Watch Video
+            </button>
+            <button class="botonRojo esInline" onclick="videoRegesta()">
+              Ver Video
             </button>
             <!-- Ventana modal -->
             <div id="modalRegesta" class="modal">
@@ -501,7 +623,8 @@
             </div>
             <!-- Ventana modal -->
 
-            <button class="botonRojo" onclick="videoDemo()">Watch Demo</button>
+            <button class="botonRojo enInline" onclick="videoDemo()">Watch Demo</button>
+            <button class="botonRojo esInline" onclick="videoDemo()">Ver Demo</button>
             <!-- Ventana modal -->
             <div id="modalDemo" class="modal">
               <!-- El video -->

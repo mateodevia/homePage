@@ -181,6 +181,15 @@ h6 {
   display: block;
 }
 
+.enInline,
+.esInline {
+  display: none;
+}
+.enInline:lang(en),
+.esInline:lang(es) {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 576px) {
   .modal-content {
     padding: 0;
