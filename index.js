@@ -46,6 +46,14 @@ function cerrarFastCab() {
   document.getElementById("modalFastCab").style.display = "none";
 }
 // eslint-disable-next-line no-unused-vars
+function videoUML() {
+  document.getElementById("modalUML").style.display = "block";
+}
+// eslint-disable-next-line no-unused-vars
+function cerrarUML() {
+  document.getElementById("modalUML").style.display = "none";
+}
+// eslint-disable-next-line no-unused-vars
 function videoArquisoft() {
   document.getElementById("modalArquisoft").style.display = "block";
 }
