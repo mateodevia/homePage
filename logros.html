@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta name="author" content="Mateo Devia" />
+        <meta name="description" content="About me page" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" type="text/css" href="styles/index.css" />
+        <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+        <link rel="stylesheet" type="text/css" href="styles/formacion.css" />
+        <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
+        <link rel="stylesheet" type="text/css" href="styles/logros.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" href="media/favicon.ico" />
+        <script src="index.js"></script>
+        <title>Mateo Devia</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div id="barraSticky">
+            <div id="rectangulo">
+                <!-- El boton para celulares -->
+                <button id="boton" onClick="handleClick()">☰</button>
+                <!-- El boton para celulares -->
+                <a href="./">
+                    <img
+                        class="logo"
+                        src="media/miFoto.jpeg"
+                        alt="Profile Picture"
+                    />
+                </a>
+                <a href="./">
+                    <div>
+                        <h2 id="miNombre">Mateo Devia Vega</h2>
+                        <h6 class="carrera en">
+                            Systems and Computing Engineering Student
+                        </h6>
+                        <h6 class="carrera es">
+                            Estudiante de Ingeniería de Sistemas
+                        </h6>
+                    </div>
+                </a>
+
+                <!-- Nav para computadores -->
+                <nav id="navHorizontal">
+                    <ul class="titulosHorizontal">
+                        <li class="titulo tituloSeleccionado en">
+                            <a href="./logros.html">Achievements</a>
+                        </li>
+                        <li class="titulo tituloSeleccionado es">
+                            <a href="./logros.html">Logros</a>
+                        </li>
+                        <li class="titulo en">
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                        <li class="titulo es">
+                            <a href="./projects.html">Proyectos</a>
+                        </li>
+                        <li class="titulo en">
+                            <a href="./education.html">Education</a>
+                        </li>
+                        <li class="titulo es">
+                            <a href="./education.html">Educación</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Nav para computadores -->
+
+                <!-- Nav para celulares -->
+                <nav id="navVertical">
+                    <ul class="titulosVertical">
+                        <li id="proyectos2" class="titulo en">
+                            <a href="./projects.html">Projects</a>
+                        </li>
+                        <li id="proyectos2" class="titulo es">
+                            <a href="./projects.html">Proyectos</a>
+                        </li>
+                        <li
+                            id="formacion2"
+                            class="titulo tituloSeleccionadoMovil en"
+                        >
+                            <a href="./education.html">Education</a>
+                        </li>
+                        <li
+                            id="formacion2"
+                            class="titulo tituloSeleccionadoMovil es"
+                        >
+                            <a href="./education.html">Education</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Nav para celulares -->
+            </div>
+        </div>
+        <!-- Navbar -->
+
+        <!-- Achivements -->
+        <div class="espacioNav"></div>
+        <div class="contenedorPremio">
+            <h1 class="es tituloLogros">Zoohackathon Colombia 2019</h1>
+            <h1 class="en tituloLogros">Zoohackathon Colombia 2019</h1>
+            <h3 class="es subtituloLogros">Premio a tercer lugar</h3>
+            <h3 class="en subtituloLogros">Thrid place award</h3>
+            <div class="contenedorOrganizadores">
+                <img
+                    src="./media/zoohackathon-logo.png"
+                    alt=""
+                    class="organizador"
+                />
+                <img src="./media/us embassy.png" alt="" class="organizador" />
+                <img src="./media/aws.png" alt="" class="organizador" />
+                <img src="./media/tadeolab.png" alt="" class="organizador" />
+            </div>
+            <img src="./media/zoohackathon.jpg" alt="" class="imagenPremio" />
+            <p class="es textoLogros">
+                Concurso organizado por la Embajada de Estados Unidos, AWS, el
+                Ministrerio del Medio Ambiente, y Tadeolab en busca de
+                soluciones tecnológicas para evitar el táfico y explotación
+                ilegal de madera en Colombia.
+            </p>
+            <p class="en textoLogros">
+                Competition organized by the US Embassy, AWS, Colombia´s
+                Ministry of Environment, and Tadeolab to find technogical
+                solutions to mitigate and control illegal timber traffic.
+            </p>
+            <div class="izquierda">
+                <h4 class="es subSubTituloLogros">Reto propuesto:</h4>
+                <h4 class="en subSubTituloLogros">Proposed challenge:</h4>
+                <p class="es textoLogros">
+                    Los participantes deben proponer soluciones TI como apps,
+                    páginas web entre otros, con el fin de facilitar el control
+                    por autoridades para la comercialización de la madera,
+                    mejorando el inventario y el proceso de registro en los
+                    libros de operaciones mantenidos por las empresas madereras.
+                </p>
+                <p class="en textoLogros">
+                    Participants were expected to find IT solutions such as
+                    apps, web sites, or other, to control and mitigate illegal
+                    timber traffic. Improving the recollection of data to
+                    enhance operations of the timber industry.
+                </p>
+                <h4 class="es subSubTituloLogros">Enlaces relacionados:</h4>
+                <h4 class="en subSubTituloLogros">Related links:</h4>
+                <a href="http://www.zoohackathon.com/colombia/" class="link"
+                    >www.zoohackathon.com/colombia</a
+                >
+                <br />
+                <a href="http://tadeolabhack.com/" class="link"
+                    >tadeolabhack.com</a
+                >
+                <br />
+                <a
+                    href="https://twitter.com/MinAmbienteCo/status/1196450493737951232?s=20"
+                    class="link"
+                    >twitter.com/MinAmbienteCo</a
+                >
+                <br />
+                <a href="http://www.lostroncos.site/" class="link"
+                    >www.lostroncos.site</a
+                >
+            </div>
+        </div>
+        <div class="contenedorPremio">
+            <h1 class="es tituloLogros">Hackatón Carvajal</h1>
+            <h1 class="en tituloLogros">Carvajal´s Hackathon</h1>
+            <h3 class="es subtituloLogros">Premio a primer lugar</h3>
+            <h3 class="en subtituloLogros">First place award</h3>
+            <div class="contenedorOrganizadores">
+                <img src="./media/carvajal.jpg" alt="" class="organizador" />
+                <img src="./media/andes.png" alt="" class="organizador" />
+                <img
+                    src="./media/bancoagrario.jpg"
+                    alt=""
+                    class="organizador"
+                />
+            </div>
+            <img src="./media/foto-carvajal.jpg" alt="" class="imagenPremio" />
+            <p class="es textoLogros">
+                Concurso organizado por Carvajal Tecnología y Servicios, y la
+                Universidad de los Andes con el objetivo de incentivar a los
+                jovenes universitarios a que desarrollen proyecos que generen
+                valor a las personas. El concurso tuvo una duracion de 24 horas
+                y contó con la participación de mas de 100 estudiantes de todo
+                el país.
+            </p>
+            <p class="en textoLogros">
+                Competition organized by Carvajal Tecnología y Servicios and
+                Universidad de los Andes with the goal of encouraging university
+                students to develop projects that generate social impact. The
+                competition was 24 hours long, and there were more than 100
+                participants.
+            </p>
+            <div class="izquierda">
+                <h4 class="es subSubTituloLogros">Reto propuesto:</h4>
+                <h4 class="en subSubTituloLogros">Proposed challenge:</h4>
+                <p class="es textoLogros">
+                    El reto propuesto por el Banco Agrário consistía en
+                    encontrar soluciones enfocadas a tecnologías 4.0 para lograr
+                    estrategias que logren integrar a la comunidad campesina más
+                    vulnerable del país al sistema bancario, para abrirles
+                    nuevas oportunidades financieras.
+                </p>
+                <p class="en textoLogros">
+                    The challenge proposed by the Agrarian Back was to find
+                    tecnology based strategies to include farmaers in the
+                    banking industry to give them new finantial oportunities.
+                </p>
+                <h4 class="es subSubTituloLogros">Enlaces relacionados:</h4>
+                <h4 class="en subSubTituloLogros">Related links:</h4>
+                <a
+                    href="https://www.facebook.com/carvajaltys/photos/a.863890866964044/2768234893196289"
+                    class="link"
+                    >www.facebook.com/carvajaltys</a
+                >
+                <br />
+                <a
+                    href="https://sistemas.uniandes.edu.co/es/inicio/noticias/item/1148-hackaton-carvajal-uniandes-2019"
+                    class="link"
+                    >sistemas.uniandes.edu.co/es/inicio/noticias</a
+                >
+                <br />
+                <a
+                    href="https://www.larepublica.co/ocio/se-realizo-la-hackaton-de-carvajal-tys-en-donde-participaron-100-estudiantes-2931227"
+                    class="link"
+                    >https://www.larepublica.co/ocio</a
+                >
+                <br />
+                <a
+                    href="https://www.citilennial.com/2019/10/22/hackaton-universitaria/"
+                    class="link"
+                    >www.citilennial.com/2019/10/22/hackaton-universitaria</a
+                >
+                <br />
+                <a
+                    href="https://www.citilennial.com/2019/10/22/hackaton-universitaria/"
+                    class="link"
+                    >hsbnoticias.com/noticias/ciencia/</a
+                >
+            </div>
+            <br />
+        </div>
+        <!-- Achivements -->
+
+        <!-- Contacto -->
+        <div>
+            <div class="linea"></div>
+            <h1 class="tituloHome en">Contact</h1>
+            <h1 class="tituloHome es">Contacto</h1>
+            <!-- Social Icons -->
+            <div>
+                <ul class="lista">
+                    <li class="itemLista">
+                        <a
+                            href="https://www.linkedin.com/in/mateo-devia-vega-7b26b7197"
+                        >
+                            <img
+                                id="linkedin"
+                                src="media/linkedin.svg"
+                                alt="LinkedIn Logo"
+                            />
+                        </a>
+                    </li>
+                    <li class="itemLista">
+                        <a href="https://github.com/mateodevia">
+                            <img
+                                id="github"
+                                src="media/git.svg"
+                                alt="GitHub Logo"
+                            />
+                        </a>
+                    </li>
+                    <li class="itemLista">
+                        <a href="https://gitlab.com/mateodevia">
+                            <img
+                                id="gitlab"
+                                src="media/gitlab.svg"
+                                alt="GitHub Logo"
+                            />
+                        </a>
+                    </li>
+                    <li class="itemLista">
+                        <a href="https://wa.me/573132803320">
+                            <img
+                                id="whatsapp"
+                                src="media/whatsapp.svg"
+                                alt="GitHub Logo"
+                            />
+                        </a>
+                    </li>
+                    <li class="itemLista">
+                        <a href="https://www.facebook.com/mateo.devia">
+                            <img
+                                id="facebook"
+                                src="media/facebook.svg"
+                                alt="Facebook Logo"
+                            />
+                        </a>
+                    </li>
+                    <li class="itemLista">
+                        <a href="https://www.instagram.com/mateodevia/">
+                            <img
+                                id="instagram"
+                                src="media/instagram.svg"
+                                alt="Instagram Logo"
+                            />
+                        </a>
+                    </li>
+                    <li class="itemLista">
+                        <a href="https://twitter.com/MateoDevia5">
+                            <img
+                                id="twitter"
+                                src="media/twitter.svg"
+                                alt="Twitter Logo"
+                            />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Social Icons -->
+            <div class="linea"></div>
+            <div class="fondoGris container-fluid">
+                <div class="row justify-content-center">
+                    <h4 class="col-12 col-sm-4 infoContacto">
+                        m.devia@uniandes.edu.co
+                    </h4>
+                    <h4 class="col-12 col-sm-4 infoContacto">
+                        mateodevia2@hotmail.com
+                    </h4>
+                    <h4 class="col-12 col-sm-4 infoContacto">
+                        Bogota, Colombia
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal Idiomas-->
+        <div id="modalIdiomas" class="modal">
+            <div class="modal-content">
+                <div class="contenedorIdioma">
+                    <h1 class="preguntaLenguaje">
+                        What Language do you Prefer?
+                    </h1>
+                    <button onclick="setLanguage('en')" class="botonRojo">
+                        English
+                    </button>
+                    <button onclick="setLanguage('es')" class="botonRojo">
+                        Español
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Ventana modal Idiomas-->
+        <script>
+            cargarLenguaje();
+        </script>
+    </body>
+</html>

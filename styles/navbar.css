@@ -1,191 +1,192 @@
 body {
-  margin: 0px;
+    margin: 0px;
 }
 
 #boton {
-  display: none;
+    display: none;
 }
 
 .logo {
-  border-radius: 50%;
-  border: 5px solid #e74c3c;
-  height: 100px;
-  float: left;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  box-sizing: content-box;
-  box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.342), 0 1px 0px 0 rgba(0, 0, 0, 0.308);
+    border-radius: 50%;
+    border: 5px solid #e74c3c;
+    height: 100px;
+    float: left;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    box-sizing: content-box;
+    box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.342),
+        0 1px 0px 0 rgba(0, 0, 0, 0.308);
 }
 
 #miNombre {
-  font-size: 24px;
-  float: left;
-  margin-top: 10px;
-  color: white;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  margin-left: 120px;
-  margin-bottom: 0;
+    font-size: 24px;
+    float: left;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 120px;
+    margin-bottom: 0;
 }
 
 .carrera {
-  margin-top: 35px;
-  margin-left: 120px;
-  position: absolute;
-  color: white;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  width: 400px;
+    margin-top: 35px;
+    margin-left: 120px;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    width: 400px;
 }
 
 #rectangulo {
-  position: relative;
-  height: 60px;
-  background-color: #e74c3c;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342),
-    0 6px 20px 0 rgba(0, 0, 0, 0.308);
+    position: relative;
+    height: 60px;
+    background-color: #e74c3c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.342),
+        0 6px 20px 0 rgba(0, 0, 0, 0.308);
 }
 
 #navHorizontal {
-  float: right;
-  background-color: #e74c3c;
-  height: 100%;
+    float: right;
+    background-color: #e74c3c;
+    height: 100%;
 }
 
 #navVertical {
-  margin-top: 5px;
-  display: none;
+    margin-top: 5px;
+    display: none;
 }
 
 #barraSticky {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  opacity: 0.95;
-  z-index: 2;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    opacity: 0.95;
+    z-index: 2;
 }
 
 .titulosHorizontal {
-  display: flex;
-  justify-content: left;
-  padding: 0;
-  margin: 0;
-  position: sticky;
-  overflow: hidden;
-  top: 0;
-  height: 100%;
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    overflow: hidden;
+    top: 0;
+    height: 100%;
 }
 
 .titulosVertical {
-  display: none;
+    display: none;
 }
 
 .titulo {
-  list-style-type: none;
-  font-size: 16px;
-  padding-top: 25px;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  color: white;
+    list-style-type: none;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: white;
 }
 .tituloSeleccionado {
-  border-bottom: 4px solid;
+    border-bottom: 4px solid;
 }
 
 .tituloSeleccionadoMovil {
-  border-left: 8px solid !important;
+    border-left: 8px solid !important;
 }
 .titulo:hover {
-  background-color: lightgray;
-  color: #e74c3c;
-  font-weight: bolder;
+    background-color: lightgray;
+    color: #e74c3c;
+    font-weight: bolder;
 }
 
 a {
-  text-decoration: none;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  color: inherit;
-  padding-bottom: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: inherit;
+    padding-bottom: 9px;
 }
 
 a:hover {
-  text-decoration: none;
-  font-weight: bold;
-  font-family: "Raleway", sans-serif;
-  color: inherit;
-  padding-bottom: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: inherit;
+    padding-bottom: 9px;
 }
 
-@media only screen and (max-width: 650px) {
-  #rectangulo {
-    text-align: right;
-  }
+@media only screen and (max-width: 785px) {
+    #rectangulo {
+        text-align: right;
+    }
 
-  #navHorizontal {
-    display: none;
-  }
+    #navHorizontal {
+        display: none;
+    }
 
-  #miNombre {
-    padding-right: 10px;
-    padding-top: 10px;
-    margin: 0;
-    width: 100%;
-  }
-  .carrera {
-    padding-right: 10px;
-    position: relative;
-    margin: 0;
-    font-size: 10px;
-    width: 100%;
-  }
+    #miNombre {
+        padding-right: 10px;
+        padding-top: 10px;
+        margin: 0;
+        width: 100%;
+    }
+    .carrera {
+        padding-right: 10px;
+        position: relative;
+        margin: 0;
+        font-size: 10px;
+        width: 100%;
+    }
 
-  #boton {
-    display: block;
-    padding: 2vw;
-    font-size: 35px;
-    background-color: #e74c3c;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: absolute;
-    height: 58px;
-    padding-top: 0;
-    padding-bottom: 0;
-    z-index: 10;
-    color: white;
-  }
+    #boton {
+        display: block;
+        padding: 2vw;
+        font-size: 35px;
+        background-color: #e74c3c;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        height: 58px;
+        padding-top: 0;
+        padding-bottom: 0;
+        z-index: 10;
+        color: white;
+    }
 
-  .logo {
-    display: none;
-  }
+    .logo {
+        display: none;
+    }
 
-  .titulosHorizontal {
-    display: none;
-  }
+    .titulosHorizontal {
+        display: none;
+    }
 
-  .titulosVertical {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 0px;
-    margin: 0;
-    flex-direction: column;
-    font-size: 50%;
-    background-color: #e74c3c;
-  }
+    .titulosVertical {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        margin: 0;
+        flex-direction: column;
+        font-size: 50%;
+        background-color: #e74c3c;
+    }
 
-  .titulo {
-    list-style-type: none;
-    font-size: 16px;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    border: 0;
-    z-index: 2;
-  }
+    .titulo {
+        list-style-type: none;
+        font-size: 16px;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        border: 0;
+        z-index: 2;
+    }
 }
