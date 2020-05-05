@@ -1,92 +1,57 @@
 #sombreado {
-  opacity: 0.9;
-  background-color: grey;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+    opacity: 0.9;
+    background-color: grey;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 #foto {
-  position: absolute;
-  z-index: -1;
-  height: 400px;
-  width: 100vw;
-  background-image: url("../media/home.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    position: absolute;
+    z-index: -1;
+    height: 400px;
+    width: 100vw;
+    background-image: url('../media/home.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .interes {
-  text-align: center;
-  margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .tituloInteres {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .elementosBarras {
-  margin: 1.5vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
+    margin: 1.5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .barras {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 .herramienta {
-  max-height: 75px;
-  max-width: 120px;
+    max-height: 75px;
+    max-width: 120px;
 }
 
 .imagenHerramienta {
-  text-align: center;
-  vertical-align: middle;
-  height: 75px;
-  line-height: 75px;
+    text-align: center;
+    vertical-align: middle;
+    height: 75px;
+    line-height: 75px;
 }
 
 #tools {
-  margin-bottom: 10px;
-}
-
-#quote {
-  color: white;
-  font-size: 40px;
-  margin: 15px;
-  margin-bottom: 5px;
-}
-
-@media only screen and (max-width: 2200px) {
-  #quote {
-    font-size: 2vw;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  #quote {
-    font-size: 3vw;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  #quote {
-    font-size: 3.5vw;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #quote {
-    font-size: 5vw;
-  }
-}
-@media only screen and (max-width: 300px) {
-  #quote {
-    font-size: 6vw;
-  }
+    margin-bottom: 10px;
 }

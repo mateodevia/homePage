@@ -1,0 +1,169 @@
+.contenedorNav {
+    height: 60px;
+    width: 100%;
+    background-color: #e74c3c;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    -webkit-box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 20px 30px -15px rgba(0, 0, 0, 0.75);
+    z-index: 2;
+}
+
+#boton {
+    display: none;
+}
+
+.yo {
+    color: white;
+    position: absolute;
+}
+
+.yo a {
+    color: white;
+    text-decoration: none;
+}
+
+.mateoDevia {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.logo {
+    border-radius: 50%;
+    border: 5px solid #e74c3c;
+    height: 100px;
+    z-index: 2;
+    left: 0;
+    box-sizing: content-box;
+    box-shadow: 0 4px 0px 0 rgba(0, 0, 0, 0.342),
+        0 1px 0px 0 rgba(0, 0, 0, 0.308);
+    margin: 0;
+}
+
+.miNombre {
+    font-size: 24px;
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+}
+
+.carrera {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+#navVertical {
+    display: none;
+}
+
+.titulosHorizontal {
+    text-align: right;
+    padding: 0;
+}
+
+.titulo {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: white;
+}
+
+.titulo:hover {
+    background-color: lightgray;
+    color: #e74c3c;
+    font-weight: bolder;
+}
+
+.titulo a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 11px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.titulo a:hover {
+    color: #e74c3c;
+}
+
+.tituloSeleccionado {
+    border-bottom: 4px solid;
+}
+
+.tituloSeleccionado a {
+    padding-bottom: 7px;
+}
+
+.tituloSeleccionadoMovil {
+    border-left: 8px solid !important;
+}
+
+@media only screen and (max-width: 785px) {
+    .logo {
+        display: none;
+    }
+
+    .titulosHorizontal {
+        display: none;
+    }
+
+    #navVertical {
+        padding: 0;
+        padding-top: 60px;
+    }
+
+    #boton {
+        display: block;
+        padding: 2vw;
+        font-size: 35px;
+        background-color: #e74c3c;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        height: 60px;
+        padding-top: 0;
+        padding-bottom: 0;
+        z-index: 10;
+        color: white;
+    }
+
+    .tituloVertical {
+        background-color: #e74c3c;
+        list-style-type: none;
+    }
+
+    .tituloVertical a {
+        background-color: #e74c3c;
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        text-align: right;
+        padding: 2vw;
+    }
+    .tituloVertical a:hover {
+        background-color: lightgray;
+        color: #e74c3c;
+        font-weight: bolder;
+    }
+
+    .tituloSeleccionado {
+        border: none;
+        border-left: 8px solid white;
+    }
+
+    .carrera {
+        font-size: 10px;
+    }
+}

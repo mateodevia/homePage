@@ -1,31 +1,44 @@
 body {
-  margin: 0px;
+    margin: 0px;
 }
 .panel {
-  width: 100%;
-  z-index: -1;
+    width: 100%;
+    z-index: -1;
 }
 
 .botonRojo {
-  background-color: #e74c3c;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px 4px 10px 4px;
-  cursor: pointer;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 4px 10px 4px;
+    cursor: pointer;
+}
+
+.botonGris {
+    background-color: #636363;
+    border: none;
+    color: white;
+    padding: 10px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
 }
 
 .tituloHome {
-  text-align: center;
-  margin: 25px;
-  margin-bottom: 30px;
+    text-align: center;
+    margin: 25px;
+    margin-bottom: 30px;
 }
 h4 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 .h1,
@@ -40,170 +53,172 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
 }
 
 .modal {
-  position: block;
-  z-index: 1;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-  align-items: center;
+    position: block;
+    z-index: 10;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
 }
 
 .modal-content {
-  background-color: #fefefe;
-  padding: 5px;
-  border: 1px solid #888;
-  width: 450px;
-  margin-top: 20vh;
-  margin-left: auto;
-  margin-right: auto;
+    background-color: #fefefe;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 450px;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
 }
 
 .contenedorIdioma {
-  margin: 10px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  text-align: center;
+    margin: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .espacioEnBlanco {
-  height: 60px;
+    height: 60px;
 }
 
 .tituloIdioma {
-  text-align: center;
-  width: calc(100% - 30px);
+    text-align: center;
+    width: calc(100% - 30px);
 }
 
 .preguntaLenguaje {
-  font-size: 28px;
+    font-size: 28px;
 }
 
 .slidingVertical div {
-  font-size: 30px;
-  animation: topToBottom 5s linear infinite 0s;
-  -ms-animation: topToBottom 5s linear infinite 0s;
-  -webkit-animation: topToBottom 5s linear infinite 0s;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
+    font-size: 30px;
+    animation: topToBottom 5s linear infinite 0s;
+    -ms-animation: topToBottom 5s linear infinite 0s;
+    -webkit-animation: topToBottom 5s linear infinite 0s;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
 }
 .slidingVertical div:nth-child(1) {
-  animation-delay: 2.5s;
-  -ms-animation-delay: 2.5s;
-  -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+    -ms-animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
 }
 
 /*topToBottom Animation*/
 @-moz-keyframes topToBottom {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-    -moz-transform: translateY(-50px);
-  }
-  20% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  50% {
-    opacity: 1;
-    -moz-transform: translateY(0px);
-  }
-  60% {
-    opacity: 0;
-    -moz-transform: translateY(50px);
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        -moz-transform: translateY(-50px);
+    }
+    20% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        -moz-transform: translateY(0px);
+    }
+    60% {
+        opacity: 0;
+        -moz-transform: translateY(50px);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 @-webkit-keyframes topToBottom {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-  }
-  20% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  60% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+    20% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 @-ms-keyframes topToBottom {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-    -ms-transform: translateY(-50px);
-  }
-  20% {
-    opacity: 1;
-    -ms-transform: translateY(0px);
-  }
-  50% {
-    opacity: 1;
-    -ms-transform: translateY(0px);
-  }
-  60% {
-    opacity: 0;
-    -ms-transform: translateY(50px);
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+        -ms-transform: translateY(-50px);
+    }
+    20% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        -ms-transform: translateY(0px);
+    }
+    60% {
+        opacity: 0;
+        -ms-transform: translateY(50px);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .en,
 .es {
-  display: none;
+    display: none;
 }
 .en:lang(en),
 .es:lang(es) {
-  display: block;
+    display: block;
 }
 
 .enInline,
 .esInline {
-  display: none;
+    display: none;
 }
 .enInline:lang(en),
 .esInline:lang(es) {
-  display: inline-block;
+    display: inline-block;
 }
 
 @media only screen and (max-width: 576px) {
-  .modal-content {
-    padding: 0;
-    border: 0;
-    width: 95%;
-  }
+    .modal-content {
+        z-index: 10;
+        padding: 0;
+        border: 0;
+        width: 95%;
+    }
 }
 
 @media only screen and (max-width: 460px) {
-  .espacioEnBlanco {
-    height: 90px;
-  }
-  .tituloIdioma {
-    text-align: center;
-    width: calc(100% - 20px);
-  }
+    .espacioEnBlanco {
+        height: 90px;
+    }
+    .tituloIdioma {
+        text-align: center;
+        width: calc(100% - 20px);
+    }
 }

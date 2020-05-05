@@ -12,7 +12,11 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" type="text/css" href="styles/index.css" />
-        <link rel="stylesheet" type="text/css" href="styles/navbar.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="styles/navBarSencilla.css"
+        />
         <link rel="stylesheet" type="text/css" href="styles/formacion.css" />
         <link rel="stylesheet" type="text/css" href="styles/contacto.css" />
         <link rel="stylesheet" type="text/css" href="styles/logros.css" />
@@ -27,21 +31,16 @@
 
     <body>
         <!-- Navbar -->
-        <div id="barraSticky">
-            <div id="rectangulo">
-                <!-- El boton para celulares -->
-                <button id="boton" onClick="handleClick()">☰</button>
-                <!-- El boton para celulares -->
-                <a href="./">
-                    <img
+        <div class="contenedorNav">
+            <div class="yo">
+                <a href="./"
+                    ><img
                         class="logo"
                         src="media/miFoto.jpeg"
                         alt="Profile Picture"
                     />
-                </a>
-                <a href="./">
-                    <div>
-                        <h2 id="miNombre">Mateo Devia Vega</h2>
+                    <div class="mateoDevia">
+                        <h2 class="miNombre">Mateo Devia Vega</h2>
                         <h6 class="carrera en">
                             Systems and Computing Engineering Student
                         </h6>
@@ -50,57 +49,36 @@
                         </h6>
                     </div>
                 </a>
-
-                <!-- Nav para computadores -->
-                <nav id="navHorizontal">
-                    <ul class="titulosHorizontal">
-                        <li class="titulo tituloSeleccionado en">
-                            <a href="./logros.html">Achievements</a>
-                        </li>
-                        <li class="titulo tituloSeleccionado es">
-                            <a href="./logros.html">Logros</a>
-                        </li>
-                        <li class="titulo en">
-                            <a href="./projects.html">Projects</a>
-                        </li>
-                        <li class="titulo es">
-                            <a href="./projects.html">Proyectos</a>
-                        </li>
-                        <li class="titulo en">
-                            <a href="./education.html">Education</a>
-                        </li>
-                        <li class="titulo es">
-                            <a href="./education.html">Educación</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Nav para computadores -->
-
-                <!-- Nav para celulares -->
-                <nav id="navVertical">
-                    <ul class="titulosVertical">
-                        <li id="proyectos2" class="titulo en">
-                            <a href="./projects.html">Projects</a>
-                        </li>
-                        <li id="proyectos2" class="titulo es">
-                            <a href="./projects.html">Proyectos</a>
-                        </li>
-                        <li
-                            id="formacion2"
-                            class="titulo tituloSeleccionadoMovil en"
-                        >
-                            <a href="./education.html">Education</a>
-                        </li>
-                        <li
-                            id="formacion2"
-                            class="titulo tituloSeleccionadoMovil es"
-                        >
-                            <a href="./education.html">Education</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Nav para celulares -->
             </div>
+            <ul class="titulosHorizontal">
+                <li class="titulo tituloSeleccionado">
+                    <a class="en" href="./logros.html">Achievements</a>
+                    <a class="es" href="./logros.html">Logros</a>
+                </li>
+                <li class="titulo">
+                    <a class="en" href="./projects.html">Projects</a>
+                    <a class="es" href="./projects.html">Proyectos</a>
+                </li>
+                <li class="titulo">
+                    <a class="en" href="./education.html">Education</a>
+                    <a class="es" href="./education.html">Educación</a>
+                </li>
+            </ul>
+            <button id="boton" onClick="handleClick()">☰</button>
+            <ul id="navVertical">
+                <li class="tituloVertical tituloSeleccionado">
+                    <a class="en" href="./logros.html">Achievements</a>
+                    <a class="es" href="./logros.html">Logros</a>
+                </li>
+                <li class="tituloVertical">
+                    <a class="en" href="./projects.html">Projects</a>
+                    <a class="es" href="./projects.html">Proyectos</a>
+                </li>
+                <li class="tituloVertical">
+                    <a class="en" href="./education.html">Education</a>
+                    <a class="es" href="./education.html">Educación</a>
+                </li>
+            </ul>
         </div>
         <!-- Navbar -->
 
