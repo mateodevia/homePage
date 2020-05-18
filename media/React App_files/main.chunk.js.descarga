@@ -1,0 +1,2888 @@
+(this["webpackJsonpfrontend"] = this["webpackJsonpfrontend"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/App.css ***!
+  \************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".marginApp {\r\n    width: 100%;\r\n}\r\n\r\n.testApp {\r\n    height: 300vh;\r\n    width: 100%;\r\n}\r\n\r\n/* Layout con mas de 769px. */\r\n@media screen and (min-width: 769px) {\r\n    .marginApp {\r\n        height: 60px;\r\n    }\r\n    .App {\r\n        height: 100vh;\r\n    }\r\n    .sidebarCol {\r\n        float: left;\r\n        width: 150px;\r\n        height: 100vh;\r\n        padding: 10px;\r\n    }\r\n\r\n    /* El contenedor del switch se vuelve scrollable. */\r\n    .routerContainer {\r\n        overflow-y: scroll;\r\n        overflow-x: hidden;\r\n        height: calc(100vh - 60px);\r\n        padding: 10px;\r\n        /* Firefox: */\r\n        scrollbar-color: #0a4c95 transparent;\r\n        scrollbar-width: thin;\r\n    }\r\n    /* Chrome y otros: */\r\n    .routerContainer::-webkit-scrollbar {\r\n        width: 7px;\r\n    }\r\n\r\n    .routerContainer::-webkit-scrollbar-track-piece {\r\n        background-color: transparent;\r\n    }\r\n\r\n    .routerContainer::-webkit-scrollbar-thumb:vertical {\r\n        background-color: #0a4c95;\r\n        border-radius: 10px;\r\n    }\r\n\r\n    .routerCol {\r\n        width: 100%;\r\n    }\r\n\r\n    .mainLayout {\r\n        display: block;\r\n        overflow: hidden;\r\n    }\r\n}\r\n\r\n/* Layout con menos de 768px. La altura de toda la aplicacion se extiende cuando sea necesario.  */\r\n@media screen and (max-width: 768px) {\r\n    .sidebarCol {\r\n        display: none;\r\n    }\r\n    .marginApp {\r\n        height: 85px;\r\n    }\r\n}\r\n\r\n.App {\r\n    background-color: rgb(223, 223, 223);\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Empresas/Empresas.css":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Empresas/Empresas.css ***!
+  \**************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".contenedorPrueba {\r\n    width: 95%;\r\n    height: calc(100% - 60px);\r\n    margin: 30px auto;\r\n}\r\n\r\n.pruebaDetalle {\r\n    background-color: #e4e4e4;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Dropdown/Dropdown.css":
+/*!*********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Navbar/Dropdown/Dropdown.css ***!
+  \*********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".DropDown {\r\n    display: block;\r\n    position: relative;\r\n    height: 100%;\r\n    float: left;\r\n}\r\n\r\n.DropDownList {\r\n    background-color: #797979;\r\n    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\r\n    z-index: 1;\r\n    min-width: 100%;\r\n}\r\n\r\n.DropDownListRight {\r\n    right: 0;\r\n}\r\n.DropDownListItem {\r\n    background-color: #797979;\r\n    color: white;\r\n    padding: 12px 16px;\r\n    text-decoration: none;\r\n    display: block;\r\n    cursor: pointer;\r\n    white-space: nowrap;\r\n    z-index: 1;\r\n}\r\n\r\n.DropDownListItem:hover {\r\n    background-color: #0c4270;\r\n}\r\n\r\n.DropDownHeader.dropdownhovered {\r\n    background-color: #146fbe;\r\n}\r\n\r\n/* mayor que 769 se renderiza sin collapsable. */\r\n@media screen and (min-width: 769px) {\r\n    .DropDownList {\r\n        position: absolute;\r\n    }\r\n\r\n    .topnav .DropDownHeader {\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-top: 10px;\r\n        height: 50px;\r\n        padding-left: 20px;\r\n        padding-right: 20px;\r\n        border-top-left-radius: 5px;\r\n        border-top-right-radius: 5px;\r\n        font-size: 18px;\r\n        cursor: pointer;\r\n    }\r\n}\r\n\r\n/* Menor a 769 se renderiza con collapsable.  */\r\n@media screen and (max-width: 768px) {\r\n    .topnav .DropDownHeader {\r\n        display: none;\r\n    }\r\n    .DropDown {\r\n        float: none;\r\n    }\r\n    .topnav.responsive .DropDownHeader {\r\n        float: none;\r\n        display: flex;\r\n        text-align: center;\r\n        justify-content: center;\r\n        font-size: 18px;\r\n        cursor: pointer;\r\n        padding-right: 20px;\r\n        padding-top: 10px;\r\n        padding-bottom: 10px;\r\n    }\r\n    .DropDownListItem {\r\n        text-align: center;\r\n    }\r\n}\r\n.navDropTitle .title {\r\n    font-size: 15px;\r\n    text-align: center;\r\n}\r\n.navDropTitle .subtitle {\r\n    font-size: 11px;\r\n    text-align: center;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Navbar.css":
+/*!**********************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Navbar/Navbar.css ***!
+  \**********************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".topnav {\r\n    background-color: #0c4270;\r\n    color: white;\r\n    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.8);\r\n    min-height: 60px;\r\n    position: fixed;\r\n    width: 100%;\r\n}\r\n.logo {\r\n    width: 200px;\r\n}\r\n\r\n.topnav .navlogo {\r\n    float: left;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 60px;\r\n    margin-left: 15px;\r\n    cursor: pointer;\r\n}\r\n\r\n.topnav .navitem:hover {\r\n    background-color: #146fbe;\r\n}\r\n.topnav .icon .icon-btn {\r\n    color: white;\r\n    width: 45px;\r\n    height: 40px;\r\n    border-radius: 5px;\r\n    border: white;\r\n    border-style: solid;\r\n    border-width: 1px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    cursor: pointer;\r\n}\r\n\r\n.iconimg {\r\n    width: 30px;\r\n    height: 30px;\r\n    /* Icono del Hamburger */\r\n    background-image: url(\"data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>\");\r\n}\r\n.topnav .icon .icon-btn:hover {\r\n    background-color: #146fbe;\r\n}\r\n.topnav .icon {\r\n    width: 85px;\r\n    position: absolute;\r\n    justify-content: center;\r\n    text-decoration: none;\r\n    align-items: center;\r\n    height: 60px;\r\n    right: 0;\r\n    top: 0;\r\n    display: none;\r\n    font-size: 25px;\r\n}\r\n\r\n.mobileSliderContainer {\r\n    height: 60px;\r\n    margin: 10px;\r\n    margin-top: 5px;\r\n}\r\n\r\n.mobileSlideListItem {\r\n    height: 60px;\r\n    width: 60px;\r\n    display: flex !important;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.mobileSliderIconContainer {\r\n    height: 25px;\r\n    width: 100%;\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    text-decoration: none;\r\n}\r\n.mobileSliderIcon {\r\n    width: 85px;\r\n    height: 15px;\r\n    display: flex;\r\n    justify-content: center;\r\n    text-decoration: none;\r\n}\r\n\r\n.downTriangle {\r\n    width: 0;\r\n    height: 0;\r\n    border-left: 10px solid transparent;\r\n    border-right: 10px solid transparent;\r\n    cursor: pointer;\r\n    border-top: 15px solid white;\r\n}\r\n\r\n.upTriangle {\r\n    width: 0;\r\n    height: 0;\r\n    border-left: 10px solid transparent;\r\n    border-right: 10px solid transparent;\r\n    cursor: pointer;\r\n    border-bottom: 15px solid white;\r\n}\r\n\r\n@media screen and (min-width: 769px) {\r\n    .navList {\r\n        float: right;\r\n    }\r\n\r\n    .topnav .navitem {\r\n        float: left;\r\n        display: flex;\r\n        justify-content: center;\r\n        align-items: center;\r\n        margin-top: 10px;\r\n        height: 50px;\r\n        padding-left: 20px;\r\n        padding-right: 20px;\r\n        border-top-left-radius: 5px;\r\n        border-top-right-radius: 5px;\r\n        font-size: 18px;\r\n        cursor: pointer;\r\n    }\r\n    .mobileSlider {\r\n        display: none;\r\n    }\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n    .topnav {\r\n        overflow: hidden;\r\n    }\r\n\r\n    .topnav .navitem {\r\n        display: none;\r\n    }\r\n    .topnav .icon {\r\n        display: flex;\r\n    }\r\n\r\n    .topnav.responsive .navlogo {\r\n        float: left;\r\n    }\r\n    .topnav.responsive .navitem {\r\n        float: none;\r\n        display: flex;\r\n        text-align: center;\r\n        justify-content: center;\r\n        font-size: 18px;\r\n        cursor: pointer;\r\n        padding-right: 20px;\r\n        padding-top: 10px;\r\n        padding-bottom: 10px;\r\n    }\r\n    .firstNavItem {\r\n        margin-top: 60px;\r\n    }\r\n}\r\n\r\n.NavTitleHr {\r\n    border-color: white;\r\n    border-width: 2px;\r\n    margin-top: 0px;\r\n    margin-bottom: 0px;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Sidebar/Sidebar.css":
+/*!************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Sidebar/Sidebar.css ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".sideBar {\r\n    height: calc(100% - 60px);\r\n    display: flex !important;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background-color: white;\r\n    overflow: hidden;\r\n}\r\n\r\n.sidebarModuleimg {\r\n    text-align: center;\r\n    margin-bottom: 6px;\r\n}\r\n\r\n.SideBarListItem {\r\n    height: 100px;\r\n    display: flex !important;\r\n    flex-direction: column;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.selectedModule {\r\n    box-shadow: 3px 5px 5px #999;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Usuarios/Usuarios.css":
+/*!**************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/Usuarios/Usuarios.css ***!
+  \**************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".usuariosCardContainer {\r\n    height: calc(100% - 56px);\r\n}\r\n\r\n.createUserButtonWrapper {\r\n    width: -moz-fit-content;\r\n    width: fit-content;\r\n    display: inline-block;\r\n}\r\n\r\n.searchUserButtonWrapper {\r\n    float: right;\r\n}\r\n\r\n@media only screen and (max-width: 360px) {\r\n    .searchBarInput {\r\n        width: 150px;\r\n        padding: 10px;\r\n        height: 40px;\r\n        border-radius: 10px;\r\n        border: none;\r\n        background-color: #dcdcdc;\r\n    }\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/index.css ***!
+  \**************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "body {\r\n    margin: 0;\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',\r\n        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',\r\n        'Helvetica Neue', sans-serif;\r\n    -webkit-font-smoothing: antialiased;\r\n    -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',\r\n        monospace;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/BotonAgregar/CreateButton.css":
+/*!*****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/shared/BotonAgregar/CreateButton.css ***!
+  \*****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".createButton {\r\n    background-color: grey;\r\n    border-radius: 10px;\r\n    border: none;\r\n    height: 40px;\r\n    width: 80px;\r\n}\r\n\r\n.createButton img {\r\n    height: calc(100% - 20px);\r\n    margin: 10px;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Card/Card.css":
+/*!*************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/shared/Card/Card.css ***!
+  \*************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".cardContainer {\r\n    border-radius: 5px;\r\n    height: 100%;\r\n    background-color: white;\r\n    padding: 30px;\r\n    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.4);\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/SearchBar/SearchBar.css":
+/*!***********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/shared/SearchBar/SearchBar.css ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".searchBarInput {\r\n    width: 100%;\r\n    padding: 10px;\r\n    height: 40px;\r\n    border-radius: 10px;\r\n    border: none;\r\n    background-color: #dcdcdc;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Row/Row.css":
+/*!*****************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/shared/Table/Row/Row.css ***!
+  \*****************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".rowContainer {\r\n    background-color: white;\r\n}\r\n\r\n.separationLine {\r\n    width: 100%;\r\n    background-color: rgb(170, 170, 170);\r\n    height: 1px;\r\n}\r\n\r\n.rowField {\r\n    display: inline-block;\r\n    margin: 10px;\r\n    text-align: left;\r\n}\r\n\r\n.rowMainField {\r\n    display: inline-block;\r\n    margin: 10px;\r\n}\r\n\r\n.rowMainField div {\r\n    margin: 0px;\r\n    max-height: 48px;\r\n    overflow: hidden;\r\n}\r\n\r\n.secondaryFieldValuesContainer {\r\n    display: inline-block;\r\n    vertical-align: top;\r\n}\r\n\r\n.selectedRow {\r\n    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.5);\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Table.css":
+/*!***************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/shared/Table/Table.css ***!
+  \***************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".rowsContainer {\r\n    height: calc(100% - 40px);\r\n    overflow-y: scroll;\r\n    background-color: #e4e4e4;\r\n}\r\n\r\n.rowsContainer::-webkit-scrollbar {\r\n    display: none;\r\n}\r\n\r\n.header {\r\n    width: 100%;\r\n    height: 40px;\r\n    border-radius: 10px 10px 0 0;\r\n}\r\n\r\n.mainFieldContainer {\r\n    min-width: -moz-fit-content;\r\n    min-width: fit-content;\r\n}\r\n\r\n.secondaryFields {\r\n    float: right;\r\n}\r\n\r\n.fieldContainer {\r\n    display: inline-block;\r\n    color: white;\r\n    margin: 8px 10px;\r\n    height: 24px;\r\n}\r\n\r\n.field {\r\n    display: inline-block;\r\n    margin: 0 5px;\r\n    width: -moz-fit-content;\r\n    width: fit-content;\r\n}\r\n\r\n.secondaryFieldsContainer {\r\n    text-align: right;\r\n    margin: 0px;\r\n}\r\n\r\n.sortArrow {\r\n    width: 10px;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./App.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/App.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/App.jsx":
+/*!*********************!*\
+  !*** ./src/App.jsx ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Navbar_Navbar_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar/Navbar.jsx */ "./src/Navbar/Navbar.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Sidebar_Sidebar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Sidebar/Sidebar.jsx */ "./src/Sidebar/Sidebar.jsx");
+/* harmony import */ var _src_Empresas_Empresas__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../src/Empresas/Empresas */ "./src/Empresas/Empresas.jsx");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./App.css */ "./src/App.css");
+/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_App_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Usuarios_Usuarios_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Usuarios/Usuarios.jsx */ "./src/Usuarios/Usuarios.jsx");
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\App.jsx";
+
+
+
+
+
+
+
+
+ //Lista de modulos temporarios para pruebas. Estos se deberian cargar una unica vez en este archivo.
+
+const modulosTemporarios = [{
+  nombre: 'A&F',
+  path: '/SidebarTestImgs/A&F.gif'
+}, {
+  nombre: 'ADPRO',
+  path: '/SidebarTestImgs/ADPRO.gif'
+}, {
+  nombre: 'BI',
+  path: '/SidebarTestImgs/BI.gif'
+}, {
+  nombre: 'CBR',
+  path: '/SidebarTestImgs/CBR.gif'
+}, {
+  nombre: 'FE',
+  path: '/SidebarTestImgs/FE.gif'
+}, {
+  nombre: 'GTH',
+  path: '/SidebarTestImgs/GTH.gif'
+}, {
+  nombre: 'SGC',
+  path: '/SidebarTestImgs/SGC.gif'
+}, {
+  nombre: 'SGD',
+  path: '/SidebarTestImgs/SGD.gif'
+}, {
+  nombre: 'SGP',
+  path: '/SidebarTestImgs/SGP.gif'
+}, {
+  nombre: 'SST',
+  path: '/SidebarTestImgs/SST.gif'
+}];
+
+function App(props) {
+  //Toggle para los componentes que no necesitan el sidebar.
+  const [sideBarShown, setShowSidebar] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [moduloActual, setModuloActual] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null); //Se renderiza el sidebar, para el slidebar movil ver ./Navbar/Navbar.jsx
+
+  function renderSidebar() {
+    let location = props.location.pathname.split('/')[1];
+
+    if (sideBarShown && location !== 'login') {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "mainLayout",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "sidebarCol",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "marginApp",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69,
+          columnNumber: 25
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Sidebar_Sidebar_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        modulos: modulosTemporarios,
+        moduloActual: moduloActual,
+        setModuloActual: setModuloActual,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70,
+          columnNumber: 25
+        }
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "routerCol",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76,
+          columnNumber: 21
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "marginApp",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77,
+          columnNumber: 25
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "routerContainer",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78,
+          columnNumber: 25
+        }
+      }, renderRouter())));
+    } else {
+      if (location === 'login') {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "loginLayout",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 84,
+            columnNumber: 24
+          }
+        }, renderRouter());
+      } else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 87,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "marginApp",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 88,
+            columnNumber: 25
+          }
+        }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mainLayoutNoSideBar",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 89,
+            columnNumber: 25
+          }
+        }, renderRouter()));
+      }
+    }
+  } //Renderiza las rutas de la aplicacion.
+
+
+  function renderRouter() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 101,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      exact: true,
+      path: "/",
+      render: () => {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "testApp",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 107,
+            columnNumber: 29
+          }
+        }, "HOME", moduloActual);
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 102,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/tutoriales",
+      render: () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 114,
+          columnNumber: 25
+        }
+      }, "tutoriales") //Cambiar esto por el componente que quiera.
+      ,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 111,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/soporte",
+      render: () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 120,
+          columnNumber: 25
+        }
+      }, "soporte") //Cambiar esto por el componente que quiera.
+      ,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 117,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/empresas",
+      render: () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_src_Empresas_Empresas__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126,
+          columnNumber: 25
+        }
+      }) //Cambiar esto por el componente que quiera.
+      ,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/usuarios",
+      render: () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Usuarios_Usuarios_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129,
+          columnNumber: 55
+        }
+      }),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 129,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/preguntasfrecuentes",
+      render: () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133,
+          columnNumber: 25
+        }
+      }, "preguntasfrecuentes") //Cambiar esto por el componente que quiera.
+      ,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 130,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      path: "/login",
+      render: () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141,
+          columnNumber: 25
+        }
+      }, "Login") //Cambiar esto por el componente que quiera.
+      ,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 138,
+        columnNumber: 17
+      }
+    }));
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "App",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar_Navbar_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    sideBarShown: sideBarShown,
+    modulos: modulosTemporarios,
+    moduloActual: moduloActual,
+    setModuloActual: setModuloActual,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150,
+      columnNumber: 13
+    }
+  }), renderSidebar());
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["withRouter"])(App));
+
+/***/ }),
+
+/***/ "./src/Empresas/Empresas.css":
+/*!***********************************!*\
+  !*** ./src/Empresas/Empresas.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Empresas.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Empresas/Empresas.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Empresas.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Empresas/Empresas.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Empresas.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Empresas/Empresas.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/Empresas/Empresas.jsx":
+/*!***********************************!*\
+  !*** ./src/Empresas/Empresas.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Empresas_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Empresas.css */ "./src/Empresas/Empresas.css");
+/* harmony import */ var _Empresas_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Empresas_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _shared_Table_Table__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Table/Table */ "./src/shared/Table/Table.jsx");
+/* harmony import */ var _shared_Table_Row_Row__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/Table/Row/Row */ "./src/shared/Table/Row/Row.jsx");
+/* harmony import */ var _shared_Card_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/Card/Card */ "./src/shared/Card/Card.jsx");
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\Empresas\\Empresas.jsx";
+
+
+
+
+
+let empresas = [{
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}, {
+  nombre: 'SPAZIO CONSTRUCTORA S.A.',
+  nit: 900166617,
+  tutoriales: true,
+  estadisticas: true,
+  estado: 'ACTIVO'
+}];
+
+function Empresas(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contenedorPrueba",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Card_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Table_Table__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    color: '#0C4270',
+    mainField: {
+      name: 'Empresa',
+      'min-width': '120px',
+      dataName: 'nombre'
+    },
+    fields: [{
+      name: 'NIT',
+      'min-width': '100px',
+      dataName: 'nit'
+    }, {
+      name: 'Tutoriales',
+      'min-width': '100px',
+      dataName: 'tutoriales'
+    }, {
+      name: 'Estadisticas',
+      'min-width': '100px',
+      dataName: 'estadisticas'
+    }, {
+      name: 'Estado',
+      'min-width': '100px',
+      dataName: 'estado'
+    }],
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 161,
+      columnNumber: 17
+    }
+  }, empresas.map(empresa => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Table_Row_Row__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    main: 'nombre',
+    element: empresa,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 188,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 189,
+      columnNumber: 29
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 190,
+      columnNumber: 33
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 191,
+      columnNumber: 37
+    }
+  }, "Detalle"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 192,
+      columnNumber: 37
+    }
+  }, "Probando"))))))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Empresas);
+
+/***/ }),
+
+/***/ "./src/Navbar/Dropdown/Dropdown.css":
+/*!******************************************!*\
+  !*** ./src/Navbar/Dropdown/Dropdown.css ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Dropdown.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Dropdown/Dropdown.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Dropdown.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Dropdown/Dropdown.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Dropdown.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Dropdown/Dropdown.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/Navbar/Dropdown/Dropdown.jsx":
+/*!******************************************!*\
+  !*** ./src/Navbar/Dropdown/Dropdown.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Dropdown_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dropdown.css */ "./src/Navbar/Dropdown/Dropdown.css");
+/* harmony import */ var _Dropdown_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Dropdown_css__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\Navbar\\Dropdown\\Dropdown.jsx";
+
+
+
+
+
+function Dropdown(props) {
+  const ref = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(); //El toggle del collapsable del dropdown.
+
+  const [listOpen, setListOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false); //Lista de subsecciones con sus respectivos labels y paths.
+
+  const list = props.list; //Funcion de render que cambia el estilo del dropdown si una de sus subsecciones esta seleccionada.
+
+  const render = props.render;
+
+  function renderList() {
+    if (listOpen) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        // DropDownListRight es para alinear la lista a la derecha del boton.
+        className: props.right ? 'DropDownList DropDownListRight' : 'DropDownList',
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18,
+          columnNumber: 17
+        }
+      }, list.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "DropDownListItem",
+        key: item.path,
+        onClick: () => {
+          //Si alguien hace click en un de los hijos lo manda a la ruta y cierra el navbar padre.
+          props.history.push('/' + item.path);
+
+          if (props.setNavOpen !== undefined) {
+            props.setNavOpen(false);
+          }
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27,
+          columnNumber: 25
+        }
+      }, item.lbl)));
+    } else {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44,
+          columnNumber: 20
+        }
+      });
+    }
+  } //Si el navbar está en modo responsive  se vuelve en renglon.
+
+
+  function generateHeaderClassName() {
+    let className = 'DropDownHeader';
+
+    if (props.navOpen) {
+      className += ' responsive';
+    } //Cambia el estilo del hover del mouse.
+
+
+    if (listOpen) {
+      className += ' dropdownhovered';
+    }
+
+    return className;
+  } //renderiza el titulo del dropdown con respecto a la funcion render del navbar.
+
+
+  function renderTitle() {
+    let subseccion = render(); //Si retorna una subseccion se renderiza el titulo, la linea y el titulo de la subseccion.
+
+    if (subseccion !== undefined) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "navDropTitle",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "title",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68,
+          columnNumber: 21
+        }
+      }, props.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+        className: "NavTitleHr",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69,
+          columnNumber: 21
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "subtitle",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 70,
+          columnNumber: 21
+        }
+      }, subseccion.lbl));
+    } //Si no retorna una subseccion simplesmente se renderiza el titulo.
+    else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+          className: "",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 76,
+            columnNumber: 20
+          }
+        }, props.title);
+      }
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    ref: ref //Si es el primer item del navbar se renderiza con un margin.
+    ,
+    className: props.firstNavItem ? 'DropDown firstNavItem' : 'DropDown',
+    onMouseOver: () => {
+      setListOpen(true);
+    } //El click solo cambia el estado cuando no se reconoce el mouse over(movil)
+    ,
+    onClick: () => {
+      if (!(listOpen && window.innerWidth > 768)) {
+        setListOpen(!listOpen);
+      }
+    },
+    onMouseLeave: () => {
+      setListOpen(false);
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: generateHeaderClassName(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 13
+    }
+  }, renderTitle()), renderList());
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Dropdown));
+
+/***/ }),
+
+/***/ "./src/Navbar/Navbar.css":
+/*!*******************************!*\
+  !*** ./src/Navbar/Navbar.css ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Navbar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Navbar.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Navbar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Navbar.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Navbar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Navbar/Navbar.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/Navbar/Navbar.jsx":
+/*!*******************************!*\
+  !*** ./src/Navbar/Navbar.jsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Dropdown_Dropdown_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dropdown/Dropdown.jsx */ "./src/Navbar/Dropdown/Dropdown.jsx");
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Navbar_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Navbar.css */ "./src/Navbar/Navbar.css");
+/* harmony import */ var _Navbar_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Navbar_css__WEBPACK_IMPORTED_MODULE_6__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\Navbar\\Navbar.jsx";
+
+
+
+
+
+
+
+ //Lista de paths del dropdown de contenido.
+
+const pathsContenido = [{
+  path: 'tutoriales',
+  lbl: 'Tutoriales'
+}, {
+  path: 'soporte',
+  lbl: 'Soporte Técnico'
+}]; //Lista de paths del dropdown de administrador.
+
+const pathsAdmin = [{
+  path: 'empresas',
+  lbl: 'Empresas'
+}, {
+  path: 'usuarios',
+  lbl: 'Usuarios'
+}];
+
+function MainNavbar(props) {
+  //Modulos recibidos del back.
+  let modulos = props.modulos; //Toggle del collapsible de los titulos navbar, incluyendo dropdowns.
+
+  const [navOpen, setNavOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false); //Toggle del collapsible del slider de modulos en pantallas menores a 769px.
+
+  const [sliderOpen, setSliderOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false); //Verifica si el url esta en la lista enviada por parametro
+
+  function renderCurrentUrl(navitem) {
+    let currentpath = props.location.pathname.split('/')[1];
+
+    if (navitem === 'CONTENIDO') {
+      return pathsContenido.find(path => path.path === currentpath);
+    } else if (navitem === 'ADMIN') {
+      return pathsAdmin.find(path => path.path === currentpath);
+    }
+
+    return undefined;
+  } //Si el usuario se encuentra en las preguntas frecuentes se renderiza la linea.
+
+
+  function renderPregFrec() {
+    if (props.location.pathname.split('/')[1] === 'preguntasfrecuentes') {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48,
+          columnNumber: 21
+        }
+      }, "Preguntas Frecuentas"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("hr", {
+        className: "NavTitleHr",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 49,
+          columnNumber: 21
+        }
+      }));
+    } else {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "titleNav",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53,
+          columnNumber: 20
+        }
+      }, "Preguntas Frecuentes");
+    }
+  } //Se renderiza la lista de modulos de la aplicacion (Solo movil)
+
+
+  function renderModulos() {
+    return modulos.map(modulo => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "mobileSlideListItem",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        //Al seleccionar un nuevo modulo se cambia en el estado del app.jsx
+        onClick: () => {
+          props.setModuloActual(modulo.nombre);
+        },
+        height: modulo.nombre === props.moduloActual ? '60px' : '45px',
+        width: modulo.nombre === props.moduloActual ? '60px' : '45px',
+        key: 'SidebarModulo-' + modulo.nombre,
+        className: (modulo.nombre === props.moduloActual ? 'selectedModule ' : '') + 'sidebarModuleimg',
+        src: modulo.path,
+        alt: modulo.nombre,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62,
+          columnNumber: 21
+        }
+      }));
+    });
+  } //Renderiza el SlickJs Slider.
+
+
+  function renderSlider() {
+    //Si el componente actual necesita el slider de modulos.
+    if (props.sideBarShown) {
+      let settings = {
+        dots: false,
+        //Sin puntos al final
+        arrows: false,
+        //Sin las flechas de adelantar/volver
+        infinite: true,
+        speed: 200,
+        //Velociadad de la animacion.
+        slidesToShow: modulos.length,
+        //Numero max de modulos en la pantalla
+        rows: 1,
+        touchMove: true,
+        //Drag en movil
+        swipeToSlide: true,
+        //Se mapea la cantidad de modulos por tamanho de pantalla.
+        responsive: [...Array(modulos.length).keys()].map(n => {
+          return {
+            breakpoint: 65 * n + 20,
+            settings: {
+              slidesToShow: n
+            }
+          };
+        })
+      }; //Toggle del slider en pantallas menores a 769px.
+
+      if (sliderOpen) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mobileSlider",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 119,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mobileSliderContainer",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 120,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_5___default.a, Object.assign({}, settings, {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 121,
+            columnNumber: 29
+          }
+        }), renderModulos())), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mobileSliderIconContainer",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 123,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mobileSliderIcon",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 124,
+            columnNumber: 29
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "upTriangle",
+          onClick: () => {
+            setSliderOpen(false);
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 125,
+            columnNumber: 33
+          }
+        }))));
+      } else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mobileSlider",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 137,
+            columnNumber: 21
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mobileSliderIconContainer",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 138,
+            columnNumber: 25
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "mobileSliderIcon",
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 139,
+            columnNumber: 29
+          }
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "downTriangle",
+          onClick: () => {
+            setSliderOpen(true);
+          },
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 140,
+            columnNumber: 33
+          }
+        }))));
+      }
+    } else {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 152,
+          columnNumber: 20
+        }
+      });
+    }
+  }
+
+  if (props.location.pathname.split('/')[1] === 'login') {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 157,
+        columnNumber: 16
+      }
+    });
+  } else {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 160,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: navOpen ? 'topnav responsive' : 'topnav',
+      id: "myTopnav",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 161,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navlogo",
+      onClick: () => {
+        props.history.push('/');
+        setNavOpen(false);
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 166,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      className: "logo",
+      src: "/images/logo.png",
+      alt: "SincoTools",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 173,
+        columnNumber: 25
+      }
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "icon",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 180,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "icon-btn",
+      onClick: () => setNavOpen(!navOpen),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 181,
+        columnNumber: 25
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "iconimg",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 185,
+        columnNumber: 29
+      }
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navList",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 188,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dropdown_Dropdown_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      render: () => {
+        return renderCurrentUrl('CONTENIDO');
+      },
+      firstNavItem: true,
+      list: pathsContenido,
+      navOpen: navOpen,
+      title: 'Contenido',
+      setNavOpen: setNavOpen,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 190,
+        columnNumber: 25
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "navitem",
+      onClick: () => {
+        props.history.push('/preguntasfrecuentes');
+        setNavOpen(false);
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 200,
+        columnNumber: 25
+      }
+    }, renderPregFrec()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Dropdown_Dropdown_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      render: () => {
+        return renderCurrentUrl('ADMIN');
+      } // right={true}
+      ,
+      list: pathsAdmin,
+      navOpen: navOpen,
+      title: 'Administración',
+      setNavOpen: setNavOpen,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 209,
+        columnNumber: 25
+      }
+    })), renderSlider()));
+  }
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(MainNavbar));
+
+/***/ }),
+
+/***/ "./src/Sidebar/Sidebar.css":
+/*!*********************************!*\
+  !*** ./src/Sidebar/Sidebar.css ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Sidebar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Sidebar/Sidebar.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Sidebar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Sidebar/Sidebar.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Sidebar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Sidebar/Sidebar.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/Sidebar/Sidebar.jsx":
+/*!*********************************!*\
+  !*** ./src/Sidebar/Sidebar.jsx ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_slick__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _Sidebar_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Sidebar.css */ "./src/Sidebar/Sidebar.css");
+/* harmony import */ var _Sidebar_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_Sidebar_css__WEBPACK_IMPORTED_MODULE_5__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\Sidebar\\Sidebar.jsx";
+
+
+
+
+
+
+
+
+function Sidebar(props) {
+  //Referencia al react-slick slider.
+  const ref = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(); //Modulos del la app.
+
+  let modulos = props.modulos; //Cantidad de modulos en la pantalla.
+
+  const [slideNumber, setSlideNumber] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0); //Cuando se crea el componente
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+    //Listener del resize.
+    function handleResize() {
+      //Se calcula la cantidad de modulos que caben en la pantalla
+      if (window.innerWidth > 768) {
+        let height = window.innerHeight - 80;
+        let slides = parseInt(height / 100, 10);
+
+        if (slideNumber !== slides) {
+          if (slides > modulos.length) {
+            setSlideNumber(modulos.length);
+          } else {
+            setSlideNumber(slides);
+          }
+        }
+      }
+    } //Listener del mousescroll sobre la lista.
+
+
+    const updateScroll = function (e) {
+      //Si hubo en cambio en el scroll y el mouse esta sobre el sidebar
+      if (!!e.deltaY && e.target.className.includes('sidebarScrollCheck')) {
+        if (e.deltaY > 0) {
+          ref.current.slickNext();
+        } else if (e.deltaY < 0) {
+          ref.current.slickPrev();
+        }
+      }
+    };
+
+    window.addEventListener('wheel', updateScroll);
+    window.addEventListener('resize', handleResize); //Cantidad inicial de modulos en el sidebar.
+
+    let height = window.innerHeight - 80;
+    let slides = parseInt(height / 100, 10);
+
+    if (slides > modulos.length) {
+      setSlideNumber(modulos.length);
+    } else {
+      setSlideNumber(slides);
+    } //Se quitan los listeners cuando se destruye el componente.
+
+
+    return function () {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('wheel', updateScroll);
+    };
+  }, [slideNumber, modulos.length]); //Mapeo de los modulos en html.
+
+  function renderModulos() {
+    return modulos.map(modulo => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "SideBarListItem sidebarScrollCheck",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        onClick: () => {
+          props.setModuloActual(modulo.nombre);
+        },
+        height: modulo.nombre === props.moduloActual ? '100px' : '80px',
+        width: modulo.nombre === props.moduloActual ? '100px' : '80px',
+        key: 'SidebarModulo-' + modulo.nombre,
+        className: (modulo.nombre === props.moduloActual ? 'selectedModule ' : '') + 'sidebarModuleimg sidebarScrollCheck',
+        src: modulo.path,
+        alt: modulo.nombre,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73,
+          columnNumber: 21
+        }
+      }));
+    });
+  }
+
+  let settings = {
+    dots: false,
+    //Sin puntos al final
+    arrows: false,
+    //Sin las flechas de adelantar/volver
+    infinite: true,
+    vertical: true,
+    verticalSwiping: true,
+    speed: 100,
+    //Velociadad de la animacion, entre mas rapida mayor el cambio en los modulos al hacer scroll.
+    slidesToShow: slideNumber,
+    swipeToSlide: true,
+    responsive: [{
+      breakpoint: 768,
+      settings: 'unslick' //Se destruye con menos de 768px.
+
+    }]
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "sideBar",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_4___default.a, Object.assign({
+    className: "sidebarScrollCheck sidebarList"
+  }, settings, {
+    ref: ref,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 13
+    }
+  }), renderModulos()));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["withRouter"])(Sidebar));
+
+/***/ }),
+
+/***/ "./src/Usuarios/Usuarios.css":
+/*!***********************************!*\
+  !*** ./src/Usuarios/Usuarios.css ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Usuarios.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Usuarios/Usuarios.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Usuarios.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Usuarios/Usuarios.css", function() {
+		var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../node_modules/postcss-loader/src??postcss!./Usuarios.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/Usuarios/Usuarios.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/Usuarios/Usuarios.jsx":
+/*!***********************************!*\
+  !*** ./src/Usuarios/Usuarios.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Usuarios_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Usuarios.css */ "./src/Usuarios/Usuarios.css");
+/* harmony import */ var _Usuarios_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Usuarios_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _shared_Card_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../shared/Card/Card */ "./src/shared/Card/Card.jsx");
+/* harmony import */ var _shared_BotonAgregar_CreateButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/BotonAgregar/CreateButton */ "./src/shared/BotonAgregar/CreateButton.jsx");
+/* harmony import */ var _shared_SearchBar_SearchBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/SearchBar/SearchBar */ "./src/shared/SearchBar/SearchBar.jsx");
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\Usuarios\\Usuarios.jsx";
+
+
+
+
+
+
+function Usuarios(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 13
+    }
+  }, "Usuarios"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "usuariosCardContainer",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_Card_Card__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "createUserButtonWrapper",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_BotonAgregar_CreateButton__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    color: '#0C4270',
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 25
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "searchUserButtonWrapper",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_shared_SearchBar_SearchBar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 25
+    }
+  })))));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Usuarios);
+
+/***/ }),
+
+/***/ "./src/index.css":
+/*!***********************!*\
+  !*** ./src/index.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css", function() {
+		var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../node_modules/postcss-loader/src??postcss!./index.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var history__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! history */ "./node_modules/history/esm/history.js");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
+/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./App */ "./src/App.jsx");
+/* harmony import */ var _serviceWorker__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./serviceWorker */ "./src/serviceWorker.js");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_7__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\index.js";
+
+
+
+
+
+
+
+
+const history = Object(history__WEBPACK_IMPORTED_MODULE_3__["createBrowserHistory"])();
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.StrictMode, {
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13,
+    columnNumber: 5
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Router"], {
+  history: history,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14,
+    columnNumber: 9
+  }
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  history: history,
+  __self: undefined,
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15,
+    columnNumber: 13
+  }
+}))), document.getElementById('root'));
+_serviceWorker__WEBPACK_IMPORTED_MODULE_6__["unregister"]();
+
+/***/ }),
+
+/***/ "./src/media/icons/Agregar.svg":
+/*!*************************************!*\
+  !*** ./src/media/icons/Agregar.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/Agregar.2aba8372.svg";
+
+/***/ }),
+
+/***/ "./src/media/icons/downTriangle.svg":
+/*!******************************************!*\
+  !*** ./src/media/icons/downTriangle.svg ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/downTriangle.167eb1f8.svg";
+
+/***/ }),
+
+/***/ "./src/serviceWorker.js":
+/*!******************************!*\
+  !*** ./src/serviceWorker.js ***!
+  \******************************/
+/*! exports provided: register, unregister */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "register", function() { return register; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unregister", function() { return unregister; });
+// This optional code is used to register a service worker.
+// register() is not called by default.
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on subsequent visits to a page, after all the
+// existing tabs open on the page have been closed, since previously cached
+// resources are updated in the background.
+// To learn more about the benefits of this model and instructions on how to
+// opt-in, read https://bit.ly/CRA-PWA
+const isLocalhost = Boolean(window.location.hostname === "localhost" || // [::1] is the IPv6 localhost address.
+window.location.hostname === "[::1]" || // 127.0.0.0/8 are considered localhost for IPv4.
+window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/));
+function register(config) {
+  if (false) {}
+}
+
+function registerValidSW(swUrl, config) {
+  navigator.serviceWorker.register(swUrl).then(registration => {
+    registration.onupdatefound = () => {
+      const installingWorker = registration.installing;
+
+      if (installingWorker == null) {
+        return;
+      }
+
+      installingWorker.onstatechange = () => {
+        if (installingWorker.state === "installed") {
+          if (navigator.serviceWorker.controller) {
+            // At this point, the updated precached content has been fetched,
+            // but the previous service worker will still serve the older
+            // content until all client tabs are closed.
+            console.log("New content is available and will be used when all " + "tabs for this page are closed. See https://bit.ly/CRA-PWA."); // Execute callback
+
+            if (config && config.onUpdate) {
+              config.onUpdate(registration);
+            }
+          } else {
+            // At this point, everything has been precached.
+            // It's the perfect time to display a
+            // "Content is cached for offline use." message.
+            console.log("Content is cached for offline use."); // Execute callback
+
+            if (config && config.onSuccess) {
+              config.onSuccess(registration);
+            }
+          }
+        }
+      };
+    };
+  }).catch(error => {
+    console.error("Error during service worker registration:", error);
+  });
+}
+
+function checkValidServiceWorker(swUrl, config) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl, {
+    headers: {
+      "Service-Worker": "script"
+    }
+  }).then(response => {
+    // Ensure service worker exists, and that we really are getting a JS file.
+    const contentType = response.headers.get("content-type");
+
+    if (response.status === 404 || contentType != null && contentType.indexOf("javascript") === -1) {
+      // No service worker found. Probably a different app. Reload the page.
+      navigator.serviceWorker.ready.then(registration => {
+        registration.unregister().then(() => {
+          window.location.reload();
+        });
+      });
+    } else {
+      // Service worker found. Proceed as normal.
+      registerValidSW(swUrl, config);
+    }
+  }).catch(() => {
+    console.log("No internet connection found. App is running in offline mode.");
+  });
+}
+
+function unregister() {
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    }).catch(error => {
+      console.error(error.message);
+    });
+  }
+}
+
+/***/ }),
+
+/***/ "./src/shared/BotonAgregar/CreateButton.css":
+/*!**************************************************!*\
+  !*** ./src/shared/BotonAgregar/CreateButton.css ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./CreateButton.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/BotonAgregar/CreateButton.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./CreateButton.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/BotonAgregar/CreateButton.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./CreateButton.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/BotonAgregar/CreateButton.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/shared/BotonAgregar/CreateButton.jsx":
+/*!**************************************************!*\
+  !*** ./src/shared/BotonAgregar/CreateButton.jsx ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _CreateButton_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CreateButton.css */ "./src/shared/BotonAgregar/CreateButton.css");
+/* harmony import */ var _CreateButton_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_CreateButton_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _media_icons_Agregar_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../media/icons/Agregar.svg */ "./src/media/icons/Agregar.svg");
+/* harmony import */ var _media_icons_Agregar_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_media_icons_Agregar_svg__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\shared\\BotonAgregar\\CreateButton.jsx";
+
+
+
+
+function CreateButton(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "createButton",
+    style: {
+      'background-color': props.color
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _media_icons_Agregar_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    alt: "plus sign icon",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 13
+    }
+  }));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (CreateButton);
+
+/***/ }),
+
+/***/ "./src/shared/Card/Card.css":
+/*!**********************************!*\
+  !*** ./src/shared/Card/Card.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Card.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Card/Card.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Card.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Card/Card.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Card.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Card/Card.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/shared/Card/Card.jsx":
+/*!**********************************!*\
+  !*** ./src/shared/Card/Card.jsx ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Card_Card_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Card/Card.css */ "./src/shared/Card/Card.css");
+/* harmony import */ var _Card_Card_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Card_Card_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\shared\\Card\\Card.jsx";
+
+
+
+function Card(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "cardContainer",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5,
+      columnNumber: 12
+    }
+  }, props.children);
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
+/***/ "./src/shared/SearchBar/SearchBar.css":
+/*!********************************************!*\
+  !*** ./src/shared/SearchBar/SearchBar.css ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./SearchBar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/SearchBar/SearchBar.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./SearchBar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/SearchBar/SearchBar.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./SearchBar.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/SearchBar/SearchBar.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/shared/SearchBar/SearchBar.jsx":
+/*!********************************************!*\
+  !*** ./src/shared/SearchBar/SearchBar.jsx ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SearchBar.css */ "./src/shared/SearchBar/SearchBar.css");
+/* harmony import */ var _SearchBar_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_SearchBar_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _media_icons_Agregar_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../media/icons/Agregar.svg */ "./src/media/icons/Agregar.svg");
+/* harmony import */ var _media_icons_Agregar_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_media_icons_Agregar_svg__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\shared\\SearchBar\\SearchBar.jsx";
+
+
+
+
+function SearchBar(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    className: "searchBarInput",
+    type: "text",
+    placeholder: "Buscar...",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7,
+      columnNumber: 9
+    }
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (SearchBar);
+
+/***/ }),
+
+/***/ "./src/shared/Table/Row/Row.css":
+/*!**************************************!*\
+  !*** ./src/shared/Table/Row/Row.css ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./Row.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Row/Row.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./Row.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Row/Row.css", function() {
+		var newContent = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../../node_modules/postcss-loader/src??postcss!./Row.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Row/Row.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/shared/Table/Row/Row.jsx":
+/*!**************************************!*\
+  !*** ./src/shared/Table/Row/Row.jsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Row_Row_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Row/Row.css */ "./src/shared/Table/Row/Row.css");
+/* harmony import */ var _Row_Row_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Row_Row_css__WEBPACK_IMPORTED_MODULE_1__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\shared\\Table\\Row\\Row.jsx";
+
+
+
+function Row(props) {
+  let [detalle, setDetalle] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+
+  let drawFieldValue = field => {
+    if (typeof props.element[field.dataName] === 'boolean') {
+      if (props.element[field.dataName]) {
+        return 'Si';
+      } else {
+        return 'No';
+      }
+    } else {
+      return props.element[field.dataName];
+    }
+  };
+
+  let getWidth = fieldName => {
+    var _document$getElementB;
+
+    return (_document$getElementB = document.getElementById(fieldName)) === null || _document$getElementB === void 0 ? void 0 : _document$getElementB.offsetWidth;
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 9
+    }
+  }, !props.firstRow && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "separationLine",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 33
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: (detalle ? 'selectedRow' : '') + ' rowContainer',
+    onClick: () => setDetalle(!detalle),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rowMainField",
+    style: {
+      width: !props.mobile ? props.mainFieldWidth : '100%'
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 21
+    }
+  }, props.element[props.mainField.dataName])), !props.mobile && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "secondaryFieldValuesContainer",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 21
+    }
+  }, props.fields.map(field => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rowField",
+    style: {
+      'min-width': `${getWidth(field.name)}px`
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 29
+    }
+  }, drawFieldValue(field))))), detalle && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 25
+    }
+  }, props.children));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Row);
+
+/***/ }),
+
+/***/ "./src/shared/Table/Table.css":
+/*!************************************!*\
+  !*** ./src/shared/Table/Table.css ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Table.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Table.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Table.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Table.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Table.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./src/shared/Table/Table.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/shared/Table/Table.jsx":
+/*!************************************!*\
+  !*** ./src/shared/Table/Table.jsx ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Table_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Table.css */ "./src/shared/Table/Table.css");
+/* harmony import */ var _Table_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Table_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _media_icons_downTriangle_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../media/icons/downTriangle.svg */ "./src/media/icons/downTriangle.svg");
+/* harmony import */ var _media_icons_downTriangle_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_media_icons_downTriangle_svg__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\mateo\\OneDrive\\Documentos\\JAVASCRIPT\\Arquimedes\\sinco-tools\\frontend\\src\\shared\\Table\\Table.jsx";
+
+
+
+
+function Table(props) {
+  let [mainFieldWidth, setMainFieldWidth] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  let [fieldsWidth, setFieldsWidth] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  let [mobile, setMobile] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  let [size, setSize] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    width: window.innerWidth,
+    heigth: window.innerHeight
+  });
+  let headerRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
+  let fieldsRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])();
+  let firstRow = true;
+
+  let handleResize = () => {
+    setSize({
+      width: window.innerWidth,
+      heigth: window.innerHeight
+    });
+  };
+
+  let handleResize2 = () => {
+    // Este se llama como Effect secundario al cambio de size
+    // Toca separarlo porque en el handleResize se queda pegado el clousure y no se puede acceder al estado
+    let newMainFieldWidth = headerRef.current.offsetWidth - fieldsWidth;
+    let minWidth = parseInt(props.mainField['min-width'].replace('px', ''));
+
+    if (newMainFieldWidth < minWidth) {
+      fieldsRef.current.style.display = 'none';
+      setMobile(true);
+    } else {
+      fieldsRef.current.style.display = '';
+      setMobile(false);
+    }
+
+    setMainFieldWidth(newMainFieldWidth);
+  }; // cuando se carga por primera vez el componente
+
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []); // Calcula el tamaño que ocupan los titulos secundarios
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    let newFieldsWidth = fieldsRef.current.offsetWidth + 21;
+    setFieldsWidth(newFieldsWidth);
+    handleResize2();
+  }, [headerRef.current]); // LLama al segundo handler como efecto del cambio en el size
+
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(handleResize2, [size]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    ref: headerRef,
+    className: "header",
+    style: {
+      'background-color': props.color
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "fieldContainer mainFieldContainer",
+    style: {
+      width: `${mainFieldWidth}px`,
+      'min-width': parseInt(props.mainField['min-width'].replace('px', ''))
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "field",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 21
+    }
+  }, props.mainField.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: _media_icons_downTriangle_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+    className: "sortArrow",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 21
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    ref: fieldsRef,
+    className: "secondaryFields",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 17
+    }
+  }, props.fields.map(field => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      id: field.name,
+      className: "fieldContainer",
+      style: {
+        'min-width': `calc(${field['min-width']} - 10px)`
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 29
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "field",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 83,
+        columnNumber: 33
+      }
+    }, field.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: _media_icons_downTriangle_svg__WEBPACK_IMPORTED_MODULE_2___default.a,
+      className: "sortArrow",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 84,
+        columnNumber: 33
+      }
+    }));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "rowsContainer",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 13
+    }
+  }, props.children.map(row => {
+    let isFirstRow = firstRow;
+    firstRow = false;
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(row, {
+      firstRow: isFirstRow,
+      mainField: props.mainField,
+      fields: props.fields,
+      mainFieldWidth: mainFieldWidth,
+      color: props.color,
+      mobile: mobile
+    });
+  })));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Table);
+
+/***/ }),
+
+/***/ 1:
+/*!**************************************************************************************************************!*\
+  !*** multi (webpack)/hot/dev-server.js ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\Users\mateo\OneDrive\Documentos\JAVASCRIPT\Arquimedes\sinco-tools\frontend\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\mateo\OneDrive\Documentos\JAVASCRIPT\Arquimedes\sinco-tools\frontend\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\mateo\OneDrive\Documentos\JAVASCRIPT\Arquimedes\sinco-tools\frontend\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[1,"runtime-main",0]]]);
+//# sourceMappingURL=main.chunk.js.map
